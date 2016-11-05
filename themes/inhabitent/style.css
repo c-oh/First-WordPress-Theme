@@ -704,8 +704,7 @@ footer {
       footer .footer-box .footer-item span {
         font: 1rem "merriweatherbold", sans-serif; }
       footer .footer-box .footer-item .logo {
-        text-align: right;
-        width: 20%; }
+        text-align: right; }
 
 .contact a {
   text-decoration: none;
