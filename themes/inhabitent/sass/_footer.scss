@@ -1,3 +1,47 @@
-.site-footer{
-    background: black;
+footer {
+    background: url(../../images/dark-wood@2x.png);
+    color: $color__background-body;
+
+    //justify-content: space-around;
+
+.footer-box{   
+    width: 1120px; 
+    display: flex;
+    height: 278px;
+    padding: 4%;
+    margin-left: 5%;
+    .footer-item{
+        width: 25%;
+    h2 {
+        font: 1.188rem $font_footer1, sans-serif;
+        color: $color_footer;
+    }
+    p {
+        font: 1rem $font_footer3, sans-serif;
+    }
+    span {
+        font: 1rem $font_footer2, sans-serif;
+    }
+    .logo{
+        text-align: right;
+        width: 20%;
+    }
+}
+}
+}
+
+.contact a {
+    text-decoration: none;
+    color: $color__background-body;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+.copyright {
+    text-align: center;
+    text-transform: uppercase;
+    font: 1rem $font_footer4 , sans-serif;
 }
