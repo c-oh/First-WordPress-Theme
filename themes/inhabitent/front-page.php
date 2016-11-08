@@ -5,12 +5,20 @@
  * @package RED_Starter_Theme
  */
 get_header(); ?>
-            <section class = "banner-image">
+
+            <div class = "banner-image">
                      <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="banner-img" alt="inhabitent circle logo" />
-            </section>
+            </div>
 
             <div id="primary" class="content-area">
 		    <main id="main" class="site-main" role="main">
+
+            <?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<?php endwhile; // End of the loop. ?>
+
+            </main>
+            
             <section class = "shop-stuff">
                 Shop stuff
             </section>

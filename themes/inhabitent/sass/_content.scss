@@ -27,6 +27,28 @@
 	margin: $base__space-unit 0 0;
 }
 
+.site-content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.site-main {
+		margin-left: 10%;
+		flex: 70% 0 0;
+		padding: 10% 10% 0% 0%;
+		border-right: 1px solid lightgrey;
+	}
+	.widget-area {
+	    padding: 10% 0% 0 0;
+		margin-right: 80px;
+		flex: 20% 0 0;
+			
+}
+}
+
+.content-area{
+	width: 70%;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
