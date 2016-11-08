@@ -529,6 +529,48 @@ a {
   background-size: cover;
   background-repeat: no-repeat; }
 
+/* SHOP SECTION*/
+.shop {
+  height: 65vh;
+  width: 80vw;
+  margin: 0 auto; }
+  .shop h1 {
+    text-transform: uppercase;
+    text-align: center; }
+  .shop .shop-section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .shop .shop-section .shop-promotion {
+      text-align: center;
+      border: 1px solid #a1a1a1;
+      width: 20%;
+      padding: 32px;
+      -ms-flex: 23% 0 0;
+          flex: 23% 0 0; }
+      .shop .shop-section .shop-promotion img {
+        width: 20%; }
+      .shop .shop-section .shop-promotion .button {
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #248A83;
+        color: #f1f1f1;
+        margin: auto auto;
+        padding: 14px; }
+
+/* ADVENTURE SECTION*/
+.adventures {
+  height: 65vh;
+  width: 80vw;
+  margin: 4% auto; }
+  .adventures h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web"; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -642,6 +684,38 @@ a {
 
 .content-area {
   width: 70%; }
+
+.entry-header {
+  position: relative; }
+  .entry-header h2,
+  .entry-header .entry-title {
+    font-size: 2.063rem;
+    line-height: 2.625rem;
+    letter-spacing: 0.125rem;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 48px;
+    max-width: 80%;
+    top: 0;
+    background-color: #248A83;
+    color: #f1f1f1; }
+  .entry-header img {
+    width: 1000px;
+    height: auto; }
+  .entry-header a {
+    color: #f1f1f1;
+    text-decoration: none; }
+
+.entry-meta {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 7px;
+  margin-bottom: 7px;
+  background-color: #248A83;
+  color: #f1f1f1; }
 
 .page-links {
   clear: both;

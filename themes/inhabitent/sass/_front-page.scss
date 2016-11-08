@@ -1,9 +1,56 @@
-.banner-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/home-hero.jpg');
-    display: flex;
+.banner-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/home-hero.jpg');
+  display: flex;
   justify-content: center;
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* SHOP SECTION*/
+
+.shop {
+  height: 65vh;
+  width: 80vw;
+  margin: 0 auto;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .shop-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .shop-promotion {
+      text-align: center;
+      border: 1px solid #a1a1a1;
+      width: 20%;
+      padding: 32px;
+      flex: 23% 0 0;
+      img {
+        width: 20%;
+      }
+        .button {
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: $color_everywhere;
+          color: $color__background-screen;
+          margin: auto auto;
+          padding: 14px;
+        }
+      }
+    }
+}
+
+/* ADVENTURE SECTION*/
+.adventures{
+  height: 65vh;
+    width: 80vw;
+    margin: 4% auto;
+    h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font-footer4;
+    }
 }

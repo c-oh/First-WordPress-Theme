@@ -2,6 +2,7 @@
 # Content
 --------------------------------------------------------------*/
 
+
 /* Posts and pages */
 
 .sticky {
@@ -12,7 +13,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -27,7 +28,7 @@
 	margin: $base__space-unit 0 0;
 }
 
-.site-content{
+.site-content {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -38,21 +39,58 @@
 		border-right: 1px solid lightgrey;
 	}
 	.widget-area {
-	    padding: 10% 0% 0 0;
+		padding: 10% 0% 0 0;
 		margin-right: 80px;
 		flex: 20% 0 0;
-			
-}
+	}
 }
 
-.content-area{
+.content-area {
 	width: 70%;
 }
+
+.entry-header {
+	position: relative;
+	h2,
+	.entry-title {
+		font-size: 2.063rem;
+		line-height: 2.625rem;
+		letter-spacing: 0.125rem;
+		padding: 1rem;
+		position: absolute;
+		margin-top: 48px;
+		max-width: 80%;
+		top: 0;
+		background-color: $color_everywhere;
+		color: $color__background-screen;
+	}
+	img {
+		width: 1000px;
+		height: auto;
+	}
+	a {
+		color: $color__background-screen;
+		text-decoration: none;
+	}
+}
+
+.entry-meta {
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+    padding: 7px;
+	margin-bottom: 7px;
+	background-color: $color_everywhere;
+    color: $color__background-screen;
+} 
 
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
 
 /* Asides */
 
@@ -61,11 +99,13 @@
 	display: none;
 }
 
+
 /* Comments */
 
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
 }
