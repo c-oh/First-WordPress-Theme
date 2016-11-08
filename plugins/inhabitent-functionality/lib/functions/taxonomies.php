@@ -4,21 +4,17 @@
  *
  * @link  http://codex.wordpress.org/Function_Reference/register_taxonomy
  */
-
-// Add your custom taxonomies here...
-
-// Register Custom Product Type Taxonomy
-function register_product_type_taxonomy() {
-
+// Register Product Product Type Taxonomy
+function register_product_type_taxonomy_() {
 	$labels = array(
-		'name'                       => 'Products Type',
+		'name'                       => 'Product Types',
 		'singular_name'              => 'Product Type',
 		'menu_name'                  => 'Product Types',
 		'all_items'                  => 'All Product Types',
 		'parent_item'                => 'Parent Product Type',
 		'parent_item_colon'          => 'Parent Product Type:',
 		'new_item_name'              => 'New Product Type Name',
-		'add_new_item'               => 'Add Product Type',
+		'add_new_item'               => 'Add New Product Type Item',
 		'edit_item'                  => 'Edit Product Type',
 		'update_item'                => 'Update Product Type',
 		'view_item'                  => 'View Product Type',
@@ -41,7 +37,6 @@ function register_product_type_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'product_type', array( 'product' ), $args );
-
+	register_taxonomy( 'product_type', array( 'post' ), $args );
 }
-add_action( 'init', 'register_product_type_taxonomy', 0 );
+add_action( 'init', 'register_product_type_taxonomy_', 0 );
