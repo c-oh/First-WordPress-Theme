@@ -28,3 +28,12 @@ function my_custom_login_logo() {
      </style>';
 }
 add_action('login_head', 'my_custom_login_logo');
+
+function get_all_product_posts($query){
+	if(is_post_type_archive('product')&& !is_admin() && $query->is_main_query ){
+		$query->set('post_per_page', '16');
+		$query->set('orderby', 'title');
+		$query->set('order', 'ASC');
+	}
+}
+add_action('pre_get_posts', 'get_all_product_posts');

@@ -553,13 +553,6 @@ a {
           flex: 23% 0 0; }
       .shop .shop-section .shop-promotion img {
         width: 20%; }
-      .shop .shop-section .shop-promotion .button {
-        text-transform: uppercase;
-        text-decoration: none;
-        background-color: #248A83;
-        color: #f1f1f1;
-        margin: auto auto;
-        padding: 14px; }
 
 /* ADVENTURE SECTION*/
 .adventures {
