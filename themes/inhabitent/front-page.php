@@ -29,7 +29,7 @@ get_header(); ?>
     </div>
     <!-- BLOG -->
     <section class="journal">
-        <h4>Inhabitent Journal</h4>
+        <h2>inhabitent journal</h2>
         <div class="journal-container">
             <?php
    $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish'  );
@@ -50,25 +50,21 @@ get_header(); ?>
     </section>
     <!--adventure section -->
     <section class="adventures">
-        <h1>latest adventures</h1>
+        <h2>latest adventures</h2>
         <div class="adventure-section">
-            <div class="left">
+            <div class="canoe">
                 <a href="#">Getting Back to Nature in a Canoe </a>
             </div>
-            <div class="right">
-                <div class="upper-right">
+            <div class="beach">
                     <a href="#">A Night with Friends at the Beach</a>
                 </div>
-                <div class="bottom-right-area">
-                    <div class="left-area">
+                <div class="view">
                         <a href="#">Taking in the View at Big Mountain</a>
                     </div>
-                    <div class="right-area">
+                    <div class="sky">
                         <a href="#">Star - Gazing at the Night Sky</a>
                     </div>
-                </div>
             </div>
-        </div>
     </section>
     </div>
     <!-- #secondary -->

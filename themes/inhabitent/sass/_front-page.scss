@@ -20,104 +20,128 @@
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: $font_footer3;
-  h2 {
-    font: 2rem $font_header;
-    display: block;
-    width: 100%;
+  .taxonomy-loop-wrapper {
     text-align: center;
-    margin-top: 42px;
-    margin-bottom: 43px;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    width: 23.5%;
+    padding: 12px;
+    flex: 23% 0 0;
+    img {
+      height: 70px;
+      width: 70px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .btn {
+      background: #248a83;
+      color: white;
+      text-transform: uppercase;
+      font: 1rem $font_header;
+      cursor: pointer;
+      padding: 12px 24px;
+    }
   }
 }
 
-.taxonomy-loop-wrapper {
+h2 {
+  font: 2rem $font_header;
+  display: block;
+  width: 100%;
   text-align: center;
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
-  width: 23.5%;
-  padding: 12px;
-  flex: 23% 0 0;
-  img {
-    height: 70px;
-    width: 70px;
-  }
-  a {
-    text-decoration: none;
-  }
-  .btn {
-    background: #248a83;
-    color: white;
-    text-transform: uppercase;
-    font: 1rem $font_header;
-    cursor: pointer;
-    padding: 12px 24px;
-  }
+  margin-top: 42px;
+  margin-bottom: 43px;
+  text-transform: uppercase;
 }
+
 
 /* BLOG SECTION */
 
 .journal {
   width: 1077px;
+  height: 330px;
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-    h4 {
-    font: 2rem $font_header;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 42px;
-    margin-bottom: 43px;
-  }
+}
 
-  .journal-container{
-    display: flex;
-    img {
-      height: 200px;
+.journal-container {
+  display: flex;
+  img {
+    height: 200px;
+    width: 80%;
+  }
+  .post-list-info {
+    height: 370px;
+    .info-area {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      font: 0.75rem $font_footer3;
+      line-height: 1rem;
       width: 80%;
-    }
-    .post-list-info {
-      height: 370px;
-      .info-area {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        border: 1px solid #e1e1e1;
-        border-top-width: 5px;
-        font: 0.75rem $font_footer3;
-        line-height: 1rem;
-        width: 80%;
-         a{
-         text-decoration: none;
-         }
-        .title {
-         font: 1.25rem $font_header2;
-         color: #248a83;
-         line-height: 1.62rem;
-        }
-        .read-more-btn {
-          color: black;
-          border: 1px solid black;
-          font: 0.7rem $font_header;
-          padding: 10px 20px;
-          width: 35%;
-        }
+      a {
+        text-decoration: none;
+      }
+      .title {
+        font: 1.25rem $font_header2;
+        color: #248a83;
+        line-height: 1.62rem;
+      }
+      .read-more-btn {
+        color: black;
+        border: 1px solid black;
+        font: 0.7rem $font_header;
+        padding: 10px 20px;
+        width: 35%;
       }
     }
   }
 }
 
-  /* ADVENTURE SECTION*/
+
+/* ADVENTURE SECTION*/
+
 .adventures {
-  height: 65vh;
-  width: 80vw;
   margin: 4% auto;
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: $font-footer4;
-  }
+  width: 1120px;
+  margin-left: 80px;
+  margin-right: 80px;
+  .adventure-section{
+    color: white;
+    a{
+    text-decoration: none;
+     font: 1rem $font_footer3;
+    }
+  .canoe {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center center;
+        background-size: cover, cover;
+    height: 100px;
+    width: 100px;
+    
+    }
+    .beach {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat center center;
+        background-size: cover, cover;
+      height: 100px;
+      width: 100px;
+    }
+    .view {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat center center;
+        background-size: cover, cover;
+      height: 100px;
+      width: 100px;
+    }
+    .sky {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/night-sky.jpg') no-repeat center center;
+        background-size: cover, cover;
+height: 100px;
+width: 100px;}
+}
 }

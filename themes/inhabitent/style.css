@@ -556,38 +556,40 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "merriweather"; }
-  .taxonomy-loop h2 {
-    font: 2rem "novecentosanswide-normal-webfont";
-    display: block;
-    width: 100%;
+  .taxonomy-loop .taxonomy-loop-wrapper {
     text-align: center;
-    margin-top: 42px;
-    margin-bottom: 43px; }
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    width: 23.5%;
+    padding: 12px;
+    -ms-flex: 23% 0 0;
+        flex: 23% 0 0; }
+    .taxonomy-loop .taxonomy-loop-wrapper img {
+      height: 70px;
+      width: 70px; }
+    .taxonomy-loop .taxonomy-loop-wrapper a {
+      text-decoration: none; }
+    .taxonomy-loop .taxonomy-loop-wrapper .btn {
+      background: #248a83;
+      color: white;
+      text-transform: uppercase;
+      font: 1rem "novecentosanswide-normal-webfont";
+      cursor: pointer;
+      padding: 12px 24px; }
 
-.taxonomy-loop-wrapper {
+h2 {
+  font: 2rem "novecentosanswide-normal-webfont";
+  display: block;
+  width: 100%;
   text-align: center;
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
-  width: 23.5%;
-  padding: 12px;
-  -ms-flex: 23% 0 0;
-      flex: 23% 0 0; }
-  .taxonomy-loop-wrapper img {
-    height: 70px;
-    width: 70px; }
-  .taxonomy-loop-wrapper a {
-    text-decoration: none; }
-  .taxonomy-loop-wrapper .btn {
-    background: #248a83;
-    color: white;
-    text-transform: uppercase;
-    font: 1rem "novecentosanswide-normal-webfont";
-    cursor: pointer;
-    padding: 12px 24px; }
+  margin-top: 42px;
+  margin-bottom: 43px;
+  text-transform: uppercase; }
 
 /* BLOG SECTION */
 .journal {
   width: 1077px;
+  height: 330px;
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 50px;
@@ -597,54 +599,70 @@ a {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .journal h4 {
-    font: 2rem "novecentosanswide-normal-webfont";
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 42px;
-    margin-bottom: 43px; }
-  .journal .journal-container {
-    display: -ms-flexbox;
-    display: flex; }
-    .journal .journal-container img {
-      height: 200px;
+
+.journal-container {
+  display: -ms-flexbox;
+  display: flex; }
+  .journal-container img {
+    height: 200px;
+    width: 80%; }
+  .journal-container .post-list-info {
+    height: 370px; }
+    .journal-container .post-list-info .info-area {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: left;
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      font: 0.75rem "merriweather";
+      line-height: 1rem;
       width: 80%; }
-    .journal .journal-container .post-list-info {
-      height: 370px; }
-      .journal .journal-container .post-list-info .info-area {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        text-align: left;
-        border: 1px solid #e1e1e1;
-        border-top-width: 5px;
-        font: 0.75rem "merriweather";
-        line-height: 1rem;
-        width: 80%; }
-        .journal .journal-container .post-list-info .info-area a {
-          text-decoration: none; }
-        .journal .journal-container .post-list-info .info-area .title {
-          font: 1.25rem "novecentosanswide-demibold-webfont";
-          color: #248a83;
-          line-height: 1.62rem; }
-        .journal .journal-container .post-list-info .info-area .read-more-btn {
-          color: black;
-          border: 1px solid black;
-          font: 0.7rem "novecentosanswide-normal-webfont";
-          padding: 10px 20px;
-          width: 35%; }
+      .journal-container .post-list-info .info-area a {
+        text-decoration: none; }
+      .journal-container .post-list-info .info-area .title {
+        font: 1.25rem "novecentosanswide-demibold-webfont";
+        color: #248a83;
+        line-height: 1.62rem; }
+      .journal-container .post-list-info .info-area .read-more-btn {
+        color: black;
+        border: 1px solid black;
+        font: 0.7rem "novecentosanswide-normal-webfont";
+        padding: 10px 20px;
+        width: 35%; }
 
 /* ADVENTURE SECTION*/
 .adventures {
-  height: 65vh;
-  width: 80vw;
-  margin: 4% auto; }
-  .adventures h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Novecento Sans Web"; }
+  margin: 4% auto;
+  width: 1120px;
+  margin-left: 80px;
+  margin-right: 80px; }
+  .adventures .adventure-section {
+    color: white; }
+    .adventures .adventure-section a {
+      text-decoration: none;
+      font: 1rem "merriweather"; }
+    .adventures .adventure-section .canoe {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center center;
+      background-size: cover, cover;
+      height: 100px;
+      width: 100px; }
+    .adventures .adventure-section .beach {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
+      background-size: cover, cover;
+      height: 100px;
+      width: 100px; }
+    .adventures .adventure-section .view {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center center;
+      background-size: cover, cover;
+      height: 100px;
+      width: 100px; }
+    .adventures .adventure-section .sky {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center center;
+      background-size: cover, cover;
+      height: 100px;
+      width: 100px; }
 
 .about-hero {
   height: 100vh;
