@@ -250,6 +250,20 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'novecentosanswide-demibold-webfont';
+  src: url("../../fonts/Novocento/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/Novocento/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novocento/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/Novocento/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold-webfont") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecentosanswide-normal-webfont';
+  src: url("../../fonts/Novocento/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/Novocento/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novocento/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/Novocento/novecentosanswide-normal-webfont.svg#novecentosanswide-normal-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -525,34 +539,102 @@ a {
   -ms-flex-pack: center;
       justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 30px; }
 
 /* SHOP SECTION*/
-.shop {
-  height: 65vh;
-  width: 80vw;
-  margin: 0 auto; }
-  .shop h1 {
+.taxonomy-loop {
+  width: 1120px;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "merriweather"; }
+  .taxonomy-loop h2 {
+    font: 2rem "novecentosanswide-normal-webfont";
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 43px; }
+
+.taxonomy-loop-wrapper {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  width: 23.5%;
+  padding: 12px;
+  -ms-flex: 23% 0 0;
+      flex: 23% 0 0; }
+  .taxonomy-loop-wrapper img {
+    height: 70px;
+    width: 70px; }
+  .taxonomy-loop-wrapper a {
+    text-decoration: none; }
+  .taxonomy-loop-wrapper .btn {
+    background: #248a83;
+    color: white;
     text-transform: uppercase;
-    text-align: center; }
-  .shop .shop-section {
+    font: 1rem "novecentosanswide-normal-webfont";
+    cursor: pointer;
+    padding: 12px 24px; }
+
+/* BLOG SECTION */
+.journal {
+  width: 1077px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .journal h4 {
+    font: 2rem "novecentosanswide-normal-webfont";
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 43px; }
+  .journal .journal-container {
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .shop .shop-section .shop-promotion {
-      text-align: center;
-      border: 1px solid #a1a1a1;
-      width: 20%;
-      padding: 32px;
-      -ms-flex: 23% 0 0;
-          flex: 23% 0 0; }
-      .shop .shop-section .shop-promotion img {
-        width: 20%; }
+    display: flex; }
+    .journal .journal-container img {
+      height: 200px;
+      width: 80%; }
+    .journal .journal-container .post-list-info {
+      height: 370px; }
+      .journal .journal-container .post-list-info .info-area {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        text-align: left;
+        border: 1px solid #e1e1e1;
+        border-top-width: 5px;
+        font: 0.75rem "merriweather";
+        line-height: 1rem;
+        width: 80%; }
+        .journal .journal-container .post-list-info .info-area a {
+          text-decoration: none; }
+        .journal .journal-container .post-list-info .info-area .title {
+          font: 1.25rem "novecentosanswide-demibold-webfont";
+          color: #248a83;
+          line-height: 1.62rem; }
+        .journal .journal-container .post-list-info .info-area .read-more-btn {
+          color: black;
+          border: 1px solid black;
+          font: 0.7rem "novecentosanswide-normal-webfont";
+          padding: 10px 20px;
+          width: 35%; }
 
 /* ADVENTURE SECTION*/
 .adventures {
@@ -563,6 +645,10 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-family: "Novecento Sans Web"; }
+
+.about-hero {
+  height: 100vh;
+  width: 100vw; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -792,9 +878,9 @@ object {
 /* Front page */
 footer {
   background: url(../../images/dark-wood@2x.png);
-  color: #fff; }
+  color: #fff;
+  height: 360px; }
   footer .footer-box {
-    width: 1120px;
     display: -ms-flexbox;
     display: flex;
     height: 278px;

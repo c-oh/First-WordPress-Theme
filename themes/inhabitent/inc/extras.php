@@ -37,3 +37,17 @@ function get_all_product_posts($query){
 	}
 }
 add_action('pre_get_posts', 'get_all_product_posts');
+
+function my_styles_method() {
+    
+    if(!is_page_template( 'page-templates/about.php' )){
+        return;
+    }
+    $url = CFS()->get('background_image');
+    $custom_css = "
+    .about_hero {
+        background-image: url( {$url});
+    }";
+    wp_add_inline_style( 'red-starter-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'my_styles_method' );

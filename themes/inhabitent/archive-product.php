@@ -15,15 +15,15 @@ get_header(); ?>
 				?>
 			</header>
 			<!-- .page-header -->
-			<?php $terms = get_terms('product_type'); ?> +
-			<?php foreach ($terms as $term) : ?> +
+			<?php $terms = get_terms('product_type'); ?> 
+			<?php foreach ($terms as $term) : ?> 
 			<div class='shop-stuff'>
-				<?php $url = get_term_link ($term->slug , 'product_type'); ?> +
+				<?php $url = get_term_link ($term->slug , 'product_type'); ?> 
 				<a href='<?php echo $url ?>' class='button'>
 					<?php  echo $term->name ?>
 				</a>
 			</div>
-			+
+			
 			<?php endforeach; ?>
 			<div id="primary" class="archive-area">
 				<?php /* Start the Loop */ ?>
