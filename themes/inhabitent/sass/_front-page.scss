@@ -45,7 +45,7 @@
   }
 }
 
-h2 {
+h6 {
   font: 2rem $font_header;
   display: block;
   width: 100%;
@@ -60,7 +60,7 @@ h2 {
 
 .journal {
   width: 1077px;
-  height: 330px;
+  height: 400px;
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 50px;
@@ -94,7 +94,7 @@ h2 {
         color: #248a83;
         line-height: 1.62rem;
       }
-      .read-more-btn {
+      .read-entry-btn {
         color: black;
         border: 1px solid black;
         font: 0.7rem $font_header;
@@ -109,39 +109,63 @@ h2 {
 /* ADVENTURE SECTION*/
 
 .adventures {
-  margin: 4% auto;
   width: 1120px;
   margin-left: 80px;
-  margin-right: 80px;
-  .adventure-section{
-    color: white;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  
+  //margin-right: 80px;
+  .adventure-section-1, .adventure-section-2{
     a{
     text-decoration: none;
-     font: 1rem $font_footer3;
+    color:white;
+     font: 3rem $font_footer3;
     }
+  }
+
+.adventure-section-1{
+  width: 46%;
+  margin: 0;
   .canoe {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center center;
-        background-size: cover, cover;
-    height: 100px;
-    width: 100px;
-    
+        background-size: cover;
+    height: 400px;
+    width: 100%;
+    .canoe-text{
+      display: block;
     }
+    }
+}
+.adventure-section-2{
+  justify-content:space-between;
+  height: 30%;
+  width: 50%;
     .beach {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat center center;
         background-size: cover, cover;
       height: 100px;
-      width: 100px;
     }
     .view {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat center center;
         background-size: cover, cover;
       height: 100px;
-      width: 100px;
     }
     .sky {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/night-sky.jpg') no-repeat center center;
         background-size: cover, cover;
 height: 100px;
-width: 100px;}
 }
 }
+}
+
+ .read-more-btn{
+        color: white;
+        border: 1px solid white;
+        font: 0.7rem $font_header;
+        padding: 10px 20px;
+        width: 35%;
+        &:hover{
+          background: #248a83;
+        }
+ }

@@ -577,7 +577,7 @@ a {
       cursor: pointer;
       padding: 12px 24px; }
 
-h2 {
+h6 {
   font: 2rem "novecentosanswide-normal-webfont";
   display: block;
   width: 100%;
@@ -589,7 +589,7 @@ h2 {
 /* BLOG SECTION */
 .journal {
   width: 1077px;
-  height: 330px;
+  height: 400px;
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 50px;
@@ -625,7 +625,7 @@ h2 {
         font: 1.25rem "novecentosanswide-demibold-webfont";
         color: #248a83;
         line-height: 1.62rem; }
-      .journal-container .post-list-info .info-area .read-more-btn {
+      .journal-container .post-list-info .info-area .read-entry-btn {
         color: black;
         border: 1px solid black;
         font: 0.7rem "novecentosanswide-normal-webfont";
@@ -634,35 +634,53 @@ h2 {
 
 /* ADVENTURE SECTION*/
 .adventures {
-  margin: 4% auto;
   width: 1120px;
   margin-left: 80px;
-  margin-right: 80px; }
-  .adventures .adventure-section {
-    color: white; }
-    .adventures .adventure-section a {
-      text-decoration: none;
-      font: 1rem "merriweather"; }
-    .adventures .adventure-section .canoe {
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .adventures .adventure-section-1 a, .adventures .adventure-section-2 a {
+    text-decoration: none;
+    color: white;
+    font: 3rem "merriweather"; }
+  .adventures .adventure-section-1 {
+    width: 46%;
+    margin: 0; }
+    .adventures .adventure-section-1 .canoe {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center center;
-      background-size: cover, cover;
-      height: 100px;
-      width: 100px; }
-    .adventures .adventure-section .beach {
+      background-size: cover;
+      height: 400px;
+      width: 100%; }
+      .adventures .adventure-section-1 .canoe .canoe-text {
+        display: block; }
+  .adventures .adventure-section-2 {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 30%;
+    width: 50%; }
+    .adventures .adventure-section-2 .beach {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
       background-size: cover, cover;
-      height: 100px;
-      width: 100px; }
-    .adventures .adventure-section .view {
+      height: 100px; }
+    .adventures .adventure-section-2 .view {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center center;
       background-size: cover, cover;
-      height: 100px;
-      width: 100px; }
-    .adventures .adventure-section .sky {
+      height: 100px; }
+    .adventures .adventure-section-2 .sky {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center center;
       background-size: cover, cover;
-      height: 100px;
-      width: 100px; }
+      height: 100px; }
+
+.read-more-btn {
+  color: white;
+  border: 1px solid white;
+  font: 0.7rem "novecentosanswide-normal-webfont";
+  padding: 10px 20px;
+  width: 35%; }
+  .read-more-btn:hover {
+    background: #248a83; }
 
 .about-hero {
   height: 100vh;

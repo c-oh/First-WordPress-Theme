@@ -10,7 +10,7 @@ get_header(); ?>
         />
     </div>
     <section class="taxonomy-loop">
-        <h2> shop stuff </h2>
+        <h6> shop stuff </h6>
         <?php 
 		$taxonomies  = get_terms( array(
 			'taxonomy' => 'product_type',
@@ -26,47 +26,63 @@ get_header(); ?>
                 <?php echo $term->name ?> Stuff </a>
         </div>
         <?php endforeach ?>
-    </div>
-    <!-- BLOG -->
-    <section class="journal">
-        <h2>inhabitent journal</h2>
-        <div class="journal-container">
-            <?php
+        </div>
+        <!-- BLOG -->
+        <section class="journal">
+            <h6>inhabitent journal</h6>
+            <div class="journal-container">
+                <?php
    $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish'  );
    $recent_posts = get_posts( $args ); // returns an array of posts ?>
-                <?php foreach ( $recent_posts as $post ) : setup_postdata( $post ); ?>
-                <div class="post-list-info">
-                    <?php the_post_thumbnail('category-thumb'); ?>
-                    <div class= "info-area"> 
-                        <?php the_date(); ?>/
-                        <?php comments_number();?>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class= 'title'>
-                            <?php the_title();?> </a>
-                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
-                </div>
-                </div>
-                <?php endforeach; wp_reset_postdata(); ?>
-        </div>
-    </section>
-    <!--adventure section -->
-    <section class="adventures">
-        <h2>latest adventures</h2>
-        <div class="adventure-section">
-            <div class="canoe">
-                <a href="#">Getting Back to Nature in a Canoe </a>
+                    <?php foreach ( $recent_posts as $post ) : setup_postdata( $post ); ?>
+                    <div class="post-list-info">
+                        <?php the_post_thumbnail('category-thumb'); ?>
+                        <div class="info-area">
+                            <?php the_date(); ?>/
+                            <?php comments_number();?>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class='title'>
+                                <?php the_title();?> </a>
+                            <a href="<?php the_permalink(); ?>" class='read-entry-btn' /> Read More</a>
+                        </div>
+                    </div>
+                    <?php endforeach; wp_reset_postdata(); ?>
             </div>
-            <div class="beach">
-                    <a href="#">A Night with Friends at the Beach</a>
+        </section>
+        <!--adventure section -->
+        <section class="adventures">
+            <h6>latest adventures</h6>
+            <div class="adventure-section-1">
+                <div class="canoe">
+                    <div class="canoe-text">
+                        <h5>
+                            <a href="#">Getting Back to Nature in a Canoe </a>
+                        </h5>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="adventure-section-2">
+                <div class="beach">
+                    <div class="beach-text">
+                        <a href="#">A Night with Friends at the Beach</a>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+                    </div>
                 </div>
                 <div class="view">
+                    <div class="view-text">
                         <a href="#">Taking in the View at Big Mountain</a>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
                     </div>
-                    <div class="sky">
+                </div>
+                <div class="sky">
+                    <div class="sky-text">
                         <a href="#">Star - Gazing at the Night Sky</a>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
                     </div>
+                </div>
             </div>
-    </section>
-    </div>
-    <!-- #secondary -->
-    </body>
-    <?php get_footer(); ?>
+            </div>
+        </section>
+        <!-- #secondary -->
+        </body>
+        <?php get_footer(); ?>
