@@ -13,9 +13,8 @@
 /* SHOP SECTION*/
 
 .taxonomy-loop {
-  width: 1120px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 113px;
+  margin-right: 113px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -59,10 +58,9 @@ h6 {
 /* BLOG SECTION */
 
 .journal {
-  width: 1077px;
   height: 400px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 113px;
+  margin-right: 113px;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -73,10 +71,11 @@ h6 {
   display: flex;
   img {
     height: 200px;
-    width: 80%;
+    width: 90%;
   }
   .post-list-info {
     height: 370px;
+    width: 343px;
     .info-area {
       display: flex;
       flex-direction: column;
@@ -85,7 +84,7 @@ h6 {
       border-top-width: 5px;
       font: 0.75rem $font_footer3;
       line-height: 1rem;
-      width: 80%;
+      width: 90%;
       a {
         text-decoration: none;
       }
@@ -109,24 +108,34 @@ h6 {
 /* ADVENTURE SECTION*/
 
 .adventures {
-  width: 1120px;
-  margin-left: 80px;
+  margin-left: 113px;
+  margin-right: 113px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  
-  //margin-right: 80px;
+  justify-content: space-between;
+    .read-more-adven{
+      background: #248a83;
+      color: white;
+      text-transform: uppercase;
+      font: 1rem $font_header;
+      cursor: pointer;
+      padding: 12px 24px;
+      text-decoration: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   .adventure-section-1, .adventure-section-2{
     a{
     text-decoration: none;
     color:white;
-     font: 3rem $font_footer3;
     }
   }
 
 .adventure-section-1{
-  width: 46%;
+  width: 47%;
   margin: 0;
+  font: 3rem $font_footer3;
   .canoe {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center center;
         background-size: cover;
@@ -134,27 +143,42 @@ h6 {
     width: 100%;
     .canoe-text{
       display: block;
+      h5{
+        margin:0;
+        margin-left: 28px;
+      }
     }
     }
 }
 .adventure-section-2{
+  display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
   height: 30%;
-  width: 50%;
+  width: 51%;
+  font-family:$font_footer3;
     .beach {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat center center;
         background-size: cover, cover;
-      height: 100px;
+      height: 202px;
+      font-size: 2rem;
+      .beach-text{
+        display: block;
+      }
     }
     .view {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat center center;
         background-size: cover, cover;
-      height: 100px;
+      height: 186px;
+      width:48%;
+      font-size:1.563rem;
     }
     .sky {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/night-sky.jpg') no-repeat center center;
         background-size: cover, cover;
-height: 100px;
+ height: 186px;
+      width:48%;
+      font-size:1.563rem;
 }
 }
 }

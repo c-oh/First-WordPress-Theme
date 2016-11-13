@@ -5,7 +5,7 @@
  * @package Inhabitent_Theme
  */
 get_header(); ?>
-    <div class="banner-image">
+    <section class="banner-image">
         <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="banner-img" alt="inhabitent circle logo"
         />
     </div>
@@ -82,6 +82,7 @@ get_header(); ?>
                 </div>
             </div>
             </div>
+            <a href="<?php the_permalink(); ?>" class='read-more-adven' /> more adventures</a>
         </section>
         <!-- #secondary -->
         </body>
