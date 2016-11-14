@@ -45,7 +45,7 @@ function my_styles_method() {
     }
     $url = CFS()->get('background_image');
     $custom_css = "
-    .about_hero {
+    .about-hero {
         background-image: url( {$url});
     }";
     wp_add_inline_style( 'red-starter-style', $custom_css );
