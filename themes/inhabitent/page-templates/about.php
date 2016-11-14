@@ -2,21 +2,19 @@
 <?php get_header(); ?>
 
 
-<div id="primary" class="content-area">
- <main id="main" class="site-main" role="main">
    <section class="about-hero">
-   
+    <h6> about </h6>
    </section>
 
    <div = "about-section">
-            <?php echo CFS()->get( 'our_story'); ?>
-
-
-            <?php echo CFS()->get( 'our_team');
+            <?php echo CFS()->get( 'our_story'); 
+echo CFS()->get( 'our_team');
             ?>
-            </div>
+           </div>
 
  </main><!-- #main -->
-</div><!-- #primary -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>
 
 
