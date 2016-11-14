@@ -7,9 +7,17 @@
    </section>
 
    <div = "about-section">
-            <?php echo CFS()->get( 'our_story'); 
-echo CFS()->get( 'our_team');
-            ?>
+            <h6><?php
+               $props = CFS()->get_field_info('our_story');
+               echo $props['label'];
+               ?></h6>
+               <?php echo CFS()->get( 'our_story'); ?>
+
+               <h6><?php
+               $props = CFS()-> get_field_info('our_team');
+               echo $props['label'];
+               ?></h6>
+               <?php echo CFS()->get( 'our_team'); ?>
            </div>
 
  </main><!-- #main -->
