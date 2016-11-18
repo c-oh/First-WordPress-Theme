@@ -7,16 +7,17 @@
    </section>
 
    <div = "about-section">
-            <h6><?php
+            <p>
+            <?php
                $props = CFS()->get_field_info('our_story');
-               echo $props['label'];
-               ?></h6>
+               echo $props['label']; ?></p>
                <?php echo CFS()->get( 'our_story'); ?>
 
-               <h6><?php
+               <p>
+               <?php
                $props = CFS()-> get_field_info('our_team');
-               echo $props['label'];
-               ?></h6>
+               echo $props['label']; ?>
+               </p>
                <?php echo CFS()->get( 'our_team'); ?>
            </div>
 

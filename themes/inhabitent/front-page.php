@@ -70,7 +70,7 @@ get_header(); ?>
                 </div>
                 <div class="view">
                     <div class="view-text">
-                        <a href="#">Taking in the View at Big Mountain</a>
+                        <a href="#">Taking in the View <br> at Big Mountain</a>
                         <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
                     </div>
                 </div>
