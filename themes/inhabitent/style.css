@@ -720,6 +720,14 @@ h6 {
     text-align: center;
     margin-top: 22%; }
 
+.about-section {
+  margin-left: 22%;
+  font: 1rem "merriweather", sans-serif;
+  line-height: 28px; }
+  .about-section h2 {
+    text-align: center;
+    font-family: "Novecento Sans Web", sans-serif; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

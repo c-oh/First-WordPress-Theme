@@ -6,22 +6,18 @@
     <h6> about </h6>
    </section>
 
-   <div = "about-section">
+   <div class= "about-section">
             <p>
-            <?php
-               $props = CFS()->get_field_info('our_story');
-               echo $props['label']; ?></p>
-               <?php echo CFS()->get( 'our_story'); ?>
+         
+               <?php echo CFS()->get( 'our_story'); ?></p>
 
                <p>
-               <?php
-               $props = CFS()-> get_field_info('our_team');
-               echo $props['label']; ?>
-               </p>
-               <?php echo CFS()->get( 'our_team'); ?>
-           </div>
+               
+            
+               <?php echo CFS()->get( 'our_team'); ?></p>
 
- </main><!-- #main -->
+
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
