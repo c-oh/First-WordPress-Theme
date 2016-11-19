@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: $font_footer3;
+  font-family: $nb;
   .taxonomy-loop-wrapper {
     text-align: center;
     border: 1px solid #e1e1e1;
@@ -37,7 +37,7 @@
       background: #248a83;
       color: white;
       text-transform: uppercase;
-      font: 1rem $font_header;
+      font: 1rem $n;
       cursor: pointer;
       padding: 12px 24px;
     }
@@ -45,7 +45,7 @@
 }
 
 h6 {
-  font: 2rem $font_header;
+  font: 2rem $n;
   display: block;
   width: 100%;
   text-align: center;

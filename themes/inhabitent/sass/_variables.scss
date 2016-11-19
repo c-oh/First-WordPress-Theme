@@ -22,6 +22,9 @@ $color__link-hover: midnightblue;
 $color_footer: #d99054;
 
 $color_everywhere: #248A83;
+
+
+
 // Typography
 
 $font__main: sans-serif;
@@ -29,10 +32,9 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
-$font_footer1: "Novecento";
-$font_footer2:"merriweatherbold";
-$font_footer3: "merriweather";
-$font-footer4: "Novecento Sans Web";
-
-$font_header: "novecentosanswide-normal-webfont";
-$font_header2: "novecentosanswide-demibold-webfont";
+$mwb: "merriweatherbold", serif;
+$mwbi: "merriweatherbold-italic", serif;
+$mwl: "merriweatherlight", serif;
+$mwli: "merriweatherlight_italic", serif;
+$nb: "novecento-bold", sans-serif;
+$n: "novecento", sans-serif;
