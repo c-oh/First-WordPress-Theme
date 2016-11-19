@@ -671,7 +671,8 @@ h6 {
       height: 400px;
       width: 100%; }
       .adventures .adventure-section-1 .canoe .canoe-text {
-        display: block; }
+        display: block;
+        padding: 14px; }
         .adventures .adventure-section-1 .canoe .canoe-text h5 {
           margin: 0;
           margin-left: 28px; }
@@ -691,19 +692,26 @@ h6 {
       height: 202px;
       font-size: 2rem; }
       .adventures .adventure-section-2 .beach .beach-text {
-        display: block; }
+        display: block;
+        padding: 14px; }
     .adventures .adventure-section-2 .view {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center center;
       background-size: cover, cover;
       height: 186px;
       width: 48%;
-      font-size: 1.563rem; }
+      font-size: 1.563rem;
+      margin-top: 15px; }
+      .adventures .adventure-section-2 .view .view-text {
+        padding: 14px; }
     .adventures .adventure-section-2 .sky {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center center;
       background-size: cover, cover;
       height: 186px;
       width: 48%;
-      font-size: 1.563rem; }
+      font-size: 1.563rem;
+      margin-top: 15px; }
+      .adventures .adventure-section-2 .sky .sky-text {
+        padding: 14px; }
 
 .read-more-btn {
   color: white;
