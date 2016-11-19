@@ -82,21 +82,21 @@ h6 {
       text-align: left;
       border: 1px solid #e1e1e1;
       border-top-width: 5px;
-      font: 0.75rem $font_footer3;
+      font: 0.75rem $mwb;
       line-height: 1rem;
       width: 90%;
       a {
         text-decoration: none;
       }
       .title {
-        font: 1.25rem $font_header2;
+        font: 1.25rem $mwb;
         color: #248a83;
         line-height: 1.62rem;
       }
       .read-entry-btn {
         color: black;
         border: 1px solid black;
-        font: 0.7rem $font_header;
+        font: 0.7rem $mwb;
         padding: 10px 20px;
         width: 35%;
       }
@@ -118,7 +118,7 @@ h6 {
       background: #248a83;
       color: white;
       text-transform: uppercase;
-      font: 1rem $font_header;
+      font: 1rem $mwb;
       cursor: pointer;
       padding: 12px 24px;
       text-decoration: none;
@@ -135,7 +135,7 @@ h6 {
 .adventure-section-1{
   width: 47%;
   margin: 0;
-  font: 3rem $font_footer3;
+  font: 3rem $mwb;
   .canoe {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center center;
         background-size: cover;
@@ -156,7 +156,7 @@ h6 {
   justify-content:space-between;
   height: 30%;
   width: 51%;
-  font-family:$font_footer3;
+  font-family:$mwb;
     .beach {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat center center;
         background-size: cover, cover;
@@ -186,7 +186,7 @@ h6 {
  .read-more-btn{
         color: white;
         border: 1px solid white;
-        font: 0.7rem $font_header;
+        font: 0.7rem $mwb;
         padding: 10px 20px;
         width: 35%;
         &:hover{

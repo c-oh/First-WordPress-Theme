@@ -230,10 +230,10 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'merriweatherbold_italic';
+  font-family: 'merriweatherbold-italic';
   src: url("../../fonts/Merriweather/merriweather-bolditalic-webfont.eot");
   src: url("../../fonts/Merriweather/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/Merriweather/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
-  font-weight: normal;
+  font-weight: bold;
   font-style: italic; }
 
 @font-face {
@@ -248,17 +248,17 @@ th {
   src: url("../../fonts/Merriweather/merriweather-lightitalic-webfont.eot");
   src: url("../../fonts/Merriweather/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/Merriweather/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: italic; }
 
 @font-face {
-  font-family: 'novecentosanswide-demibold-webfont';
+  font-family: 'novecento-bold';
   src: url("../../fonts/Novocento/novecentosanswide-demibold-webfont.eot");
   src: url("../../fonts/Novocento/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novocento/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/Novocento/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold-webfont") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'novecentosanswide-normal-webfont';
+  font-family: 'novecento';
   src: url("../../fonts/Novocento/novecentosanswide-normal-webfont.eot");
   src: url("../../fonts/Novocento/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novocento/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/Novocento/novecentosanswide-normal-webfont.svg#novecentosanswide-normal-webfont") format("svg");
   font-weight: normal;
@@ -557,7 +557,7 @@ a {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: "merriweather"; }
+  font-family: "novecento-bold", sans-serif; }
   .taxonomy-loop .taxonomy-loop-wrapper {
     text-align: center;
     border: 1px solid #e1e1e1;
@@ -575,12 +575,12 @@ a {
       background: #248a83;
       color: white;
       text-transform: uppercase;
-      font: 1rem "novecentosanswide-normal-webfont";
+      font: 1rem "novecento", sans-serif;
       cursor: pointer;
       padding: 12px 24px; }
 
 h6 {
-  font: 2rem "novecentosanswide-normal-webfont";
+  font: 2rem "novecento", sans-serif;
   display: block;
   width: 100%;
   text-align: center;
@@ -618,19 +618,19 @@ h6 {
       text-align: left;
       border: 1px solid #e1e1e1;
       border-top-width: 5px;
-      font: 0.75rem "merriweather";
+      font: 0.75rem "merriweatherbold", serif;
       line-height: 1rem;
       width: 90%; }
       .journal-container .post-list-info .info-area a {
         text-decoration: none; }
       .journal-container .post-list-info .info-area .title {
-        font: 1.25rem "novecentosanswide-demibold-webfont";
+        font: 1.25rem "merriweatherbold", serif;
         color: #248a83;
         line-height: 1.62rem; }
       .journal-container .post-list-info .info-area .read-entry-btn {
         color: black;
         border: 1px solid black;
-        font: 0.7rem "novecentosanswide-normal-webfont";
+        font: 0.7rem "merriweatherbold", serif;
         padding: 10px 20px;
         width: 35%; }
 
@@ -649,7 +649,7 @@ h6 {
     background: #248a83;
     color: white;
     text-transform: uppercase;
-    font: 1rem "novecentosanswide-normal-webfont";
+    font: 1rem "merriweatherbold", serif;
     cursor: pointer;
     padding: 12px 24px;
     text-decoration: none;
@@ -661,7 +661,7 @@ h6 {
   .adventures .adventure-section-1 {
     width: 47%;
     margin: 0;
-    font: 3rem "merriweather"; }
+    font: 3rem "merriweatherbold", serif; }
     .adventures .adventure-section-1 .canoe {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center center;
       background-size: cover;
@@ -681,7 +681,7 @@ h6 {
         justify-content: space-between;
     height: 30%;
     width: 51%;
-    font-family: "merriweather"; }
+    font-family: "merriweatherbold", serif; }
     .adventures .adventure-section-2 .beach {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center center;
       background-size: cover, cover;
@@ -705,7 +705,7 @@ h6 {
 .read-more-btn {
   color: white;
   border: 1px solid white;
-  font: 0.7rem "novecentosanswide-normal-webfont";
+  font: 0.7rem "merriweatherbold", serif;
   padding: 10px 20px;
   width: 35%; }
   .read-more-btn:hover {
@@ -725,11 +725,11 @@ h6 {
 
 .about-section {
   margin-left: 22%;
-  font: 1rem "merriweather", sans-serif;
+  font: 1rem "merriweatherbold", serif, sans-serif;
   line-height: 28px; }
   .about-section h2 {
     text-align: center;
-    font-family: "Novecento Sans Web", sans-serif; }
+    font-family: "merriweatherbold", serif, sans-serif; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -971,12 +971,12 @@ footer {
     footer .footer-box .footer-item {
       width: 25%; }
       footer .footer-box .footer-item h2 {
-        font: 1.188rem "Novecento", sans-serif;
+        font: 1.188rem "novecento", sans-serif;
         color: #d99054; }
       footer .footer-box .footer-item p {
-        font: 1rem "merriweather", sans-serif; }
+        font: 1rem "merriweatherlight", serif; }
       footer .footer-box .footer-item span {
-        font: 1rem "merriweatherbold", sans-serif; }
+        font: 1rem "merriweatherbold", serif; }
       footer .footer-box .footer-item .logo {
         text-align: right; }
 
@@ -989,7 +989,10 @@ footer {
 .copyright {
   text-align: center;
   text-transform: uppercase;
-  font: 1rem "Novecento Sans Web", sans-serif; }
+  font: 1rem "novecento", sans-serif; }
+
+.logo img {
+  margin-left: 219px; }
 
 html {
   font-size: 16px; }
