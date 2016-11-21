@@ -857,6 +857,18 @@ h6 {
         flex: 70% 0 0;
     padding: 10% 10% 0% 0%;
     border-right: 1px solid lightgrey; }
+    .site-content .site-main .social-container {
+      display: -ms-flexbox;
+      display: flex; }
+      .site-content .site-main .social-container p {
+        margin-right: 5px; }
+      .site-content .site-main .social-container a {
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        font: 0.875rem "novecento", sans-serif;
+        padding: 10px 20px;
+        width: 35%; }
   .site-content .widget-area {
     padding: 10% 0% 0 0;
     margin-right: 80px;

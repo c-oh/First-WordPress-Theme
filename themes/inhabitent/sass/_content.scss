@@ -37,6 +37,20 @@
 		flex: 70% 0 0;
 		padding: 10% 10% 0% 0%;
 		border-right: 1px solid lightgrey;
+		.social-container {
+			display: flex;
+			p{
+				margin-right: 5px;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+				border: 1px solid black;
+				font: 0.875rem $n;
+				padding: 10px 20px;
+				width: 35%;
+			}
+		}
 	}
 	.widget-area {
 		padding: 10% 0% 0 0;
@@ -60,7 +74,7 @@
 		span {
 			font: 1rem $mwb;
 		}
-		li{
+		li {
 			list-style-type: none;
 		}
 	}
