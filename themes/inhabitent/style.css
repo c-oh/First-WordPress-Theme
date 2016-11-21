@@ -560,7 +560,8 @@ a {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: "novecento-bold", sans-serif; }
+  font-family: "merriweatherlight", serif;
+  line-height: 28px; }
   .taxonomy-loop .taxonomy-loop-wrapper {
     text-align: center;
     border: 1px solid #e1e1e1;
@@ -580,7 +581,8 @@ a {
       text-transform: uppercase;
       font: 1rem "novecento", sans-serif;
       cursor: pointer;
-      padding: 12px 24px; }
+      padding: 12px 24px;
+      font-family: "novecento", sans-serif; }
 
 h6 {
   font: 2rem "novecento", sans-serif;
@@ -593,7 +595,7 @@ h6 {
 
 /* BLOG SECTION */
 .journal {
-  height: 400px;
+  height: 465px;
   margin-left: 113px;
   margin-right: 113px;
   margin-top: 50px;
@@ -621,19 +623,22 @@ h6 {
       text-align: left;
       border: 1px solid #e1e1e1;
       border-top-width: 5px;
-      font: 0.75rem "merriweatherbold", serif;
+      font: 0.75rem "novecento", sans-serif;
       line-height: 1rem;
-      width: 90%; }
+      width: 90%;
+      padding: 10px; }
       .journal-container .post-list-info .info-area a {
-        text-decoration: none; }
+        text-decoration: none;
+        padding-bottom: 23px; }
       .journal-container .post-list-info .info-area .title {
-        font: 1.25rem "merriweatherbold", serif;
+        font: 1.25rem "novecento-bold", sans-serif;
         color: #248a83;
-        line-height: 1.62rem; }
+        line-height: 1.62rem;
+        letter-spacing: 1px; }
       .journal-container .post-list-info .info-area .read-entry-btn {
         color: black;
         border: 1px solid black;
-        font: 0.7rem "merriweatherbold", serif;
+        font: 0.7rem "novecento", sans-serif;
         padding: 10px 20px;
         width: 35%; }
 

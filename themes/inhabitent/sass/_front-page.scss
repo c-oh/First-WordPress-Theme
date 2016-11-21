@@ -18,7 +18,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: $nb;
+  font-family: $mwl;
+  line-height: 28px;
   .taxonomy-loop-wrapper {
     text-align: center;
     border: 1px solid #e1e1e1;
@@ -40,6 +41,7 @@
       font: 1rem $n;
       cursor: pointer;
       padding: 12px 24px;
+      font-family: $n
     }
   }
 }
@@ -58,7 +60,7 @@ h6 {
 /* BLOG SECTION */
 
 .journal {
-  height: 400px;
+  height: 465px;
   margin-left: 113px;
   margin-right: 113px;
   margin-top: 50px;
@@ -82,21 +84,24 @@ h6 {
       text-align: left;
       border: 1px solid #e1e1e1;
       border-top-width: 5px;
-      font: 0.75rem $mwb;
+      font: 0.75rem $n;
       line-height: 1rem;
       width: 90%;
+      padding: 10px;
       a {
         text-decoration: none;
+        padding-bottom: 23px;
       }
       .title {
-        font: 1.25rem $mwb;
+        font: 1.25rem $nb;
         color: #248a83;
         line-height: 1.62rem;
+        letter-spacing: 1px;
       }
       .read-entry-btn {
         color: black;
         border: 1px solid black;
-        font: 0.7rem $mwb;
+        font: 0.7rem $n;
         padding: 10px 20px;
         width: 35%;
       }
