@@ -739,17 +739,18 @@ h6 {
   background-position: bottom; }
   .about-hero h6 {
     color: white;
-    font-size: 3rem;
+    font: 3rem "novecento-bold", sans-serif;
     text-align: center;
     margin-top: 22%; }
 
 .about-section {
   margin-left: 22%;
-  font: 1rem "merriweatherbold", serif, sans-serif;
+  font: 1rem "merriweatherlight", serif, sans-serif;
   line-height: 28px; }
   .about-section h2 {
     text-align: center;
-    font-family: "merriweatherbold", serif, sans-serif; }
+    font: 2.063rem "novecento-bold", sans-serif;
+    color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Accessibility

@@ -7,7 +7,7 @@
 
     h6{
         color: white;
-        font-size: 3rem;
+        font: 3rem $nb;
         text-align: center;
            margin-top: 22%;
     }
@@ -15,10 +15,11 @@
 
 .about-section{
     margin-left: 22%;
-    font: 1rem $mwb, sans-serif;
+    font: 1rem $mwl, sans-serif;
     line-height: 28px;
 h2 {
     text-align: center;
-    font-family: $mwb, sans-serif;
+    font: 2.063rem $nb;
+    color: $title_color;
 }
 }
