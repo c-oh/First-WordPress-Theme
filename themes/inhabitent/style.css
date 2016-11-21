@@ -657,7 +657,7 @@ h6 {
     background: #248a83;
     color: white;
     text-transform: uppercase;
-    font: 1rem "merriweatherbold", serif;
+    font: 1rem "novecento", sans-serif;
     cursor: pointer;
     padding: 12px 24px;
     text-decoration: none;
@@ -669,18 +669,20 @@ h6 {
   .adventures .adventure-section-1 {
     width: 47%;
     margin: 0;
-    font: 3rem "merriweatherbold", serif; }
+    font: 3rem "merriweatherbold", serif;
+    height: 442px; }
     .adventures .adventure-section-1 .canoe {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center center;
       background-size: cover;
-      height: 400px;
+      height: 441px;
       width: 100%; }
       .adventures .adventure-section-1 .canoe .canoe-text {
         display: block;
-        padding: 14px; }
+        padding: 14px;
+        margin-left: 22px;
+        line-height: 3.750rem; }
         .adventures .adventure-section-1 .canoe .canoe-text h5 {
-          margin: 0;
-          margin-left: 28px; }
+          margin: 0; }
   .adventures .adventure-section-2 {
     display: -ms-flexbox;
     display: flex;
@@ -696,13 +698,15 @@ h6 {
       background-size: cover, cover;
       height: 202px;
       font-size: 2rem; }
+      .adventures .adventure-section-2 .beach .read-more-btn {
+        margin-left: 19px; }
       .adventures .adventure-section-2 .beach .beach-text {
         display: block;
         padding: 14px; }
     .adventures .adventure-section-2 .view {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center center;
       background-size: cover, cover;
-      height: 186px;
+      height: 225px;
       width: 48%;
       font-size: 1.563rem;
       margin-top: 15px; }
@@ -711,7 +715,7 @@ h6 {
     .adventures .adventure-section-2 .sky {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/adventure-photos/night-sky.jpg") no-repeat center center;
       background-size: cover, cover;
-      height: 186px;
+      height: 225px;
       width: 48%;
       font-size: 1.563rem;
       margin-top: 15px; }
@@ -721,7 +725,7 @@ h6 {
 .read-more-btn {
   color: white;
   border: 1px solid white;
-  font: 0.7rem "merriweatherbold", serif;
+  font: 0.875rem "novecento", sans-serif;
   padding: 10px 20px;
   width: 35%; }
   .read-more-btn:hover {

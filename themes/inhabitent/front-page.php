@@ -57,7 +57,9 @@ get_header(); ?>
                         <h5>
                             <a href="#">Getting Back to Nature in a Canoe </a>
                         </h5>
+                    
                         <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+              
                     </div>
                 </div>
             </div>
@@ -65,8 +67,8 @@ get_header(); ?>
                 <div class="beach">
                     <div class="beach-text">
                         <a href="#">A Night with Friends at the Beach</a>
-                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
                     </div>
+                    <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
                 </div>
                 <div class="view">
                     <div class="view-text">
