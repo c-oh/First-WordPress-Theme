@@ -47,6 +47,11 @@ function get_all_product_posts($query){
 		$query->set('orderby', 'title');
 		$query->set('order', 'ASC');
 	}
+     elseif (is_tax() ) {
+	$query->set('posts_per_page', '4');
+	$query->set('orderby', 'title');
+	$query->set('order', 'ASC');
+	}
 }
 add_action('pre_get_posts', 'get_all_product_posts');
 
@@ -106,3 +111,17 @@ function red_wp_trim_excerpt( $text ) {
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+
+/**	Set custom archive title
+*/ 
+function display_custom_archive_title ($title) {
+	if (is_post_type_archive ('product' )) {
+		$title = "Shop Stuff";
+	}
+	elseif(is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+return $title;
+}
+	
+add_filter( 'get_the_archive_title', 'display_custom_archive_title');
