@@ -21,13 +21,25 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 
-function my_custom_login_logo() {
-     echo '<style type="text/css">                                                                   
-         h1 a { background-image:url('.get_stylesheet_directory_uri().'images/logos/inhabitent-logo-full.svg) !important; 
-         height: 120px !important; width: 410px !important; margin-left: -40px;}                            
-     </style>';
+
+function my_custom_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+            padding-bottom: 30px; background-size: 220px !important; width: 230px !important;background-position: bottom !important;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_custom_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
 }
-add_action('login_head', 'my_custom_login_logo');
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+function my_login_logo_url_title() {
+    return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
 
 function get_all_product_posts($query){
 	if(is_post_type_archive('product')&& !is_admin() && $query->is_main_query ){
