@@ -42,10 +42,29 @@
 		padding: 10% 0% 0 0;
 		margin-right: 80px;
 		flex: 20% 0 0;
+		h2 {
+			font: 1.5rem $nb;
+			color: $title_color;
+			line-height: 1.875rem;
+		}
+		a {
+			color: $color_everywhere;
+			line-height: 28px;
+		}
+		i {
+			margin-right: 5px;
+		}
+		p {
+			font: 1rem $mwl;
+		}
+		span {
+			font: 1rem $mwb;
+		}
+		li{
+			list-style-type: none;
+		}
 	}
 }
-
-
 
 .content-area {
 	width: 70%;
@@ -82,11 +101,11 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
-    padding: 7px;
+	padding: 7px;
 	margin-bottom: 7px;
 	background-color: $color_everywhere;
-    color: $color__background-screen;
-} 
+	color: $color__background-screen;
+}
 
 .page-links {
 	clear: both;

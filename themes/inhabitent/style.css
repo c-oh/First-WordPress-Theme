@@ -862,6 +862,21 @@ h6 {
     margin-right: 80px;
     -ms-flex: 20% 0 0;
         flex: 20% 0 0; }
+    .site-content .widget-area h2 {
+      font: 1.5rem "novecento-bold", sans-serif;
+      color: #2f1339;
+      line-height: 1.875rem; }
+    .site-content .widget-area a {
+      color: #248A83;
+      line-height: 28px; }
+    .site-content .widget-area i {
+      margin-right: 5px; }
+    .site-content .widget-area p {
+      font: 1rem "merriweatherlight", serif; }
+    .site-content .widget-area span {
+      font: 1rem "merriweatherbold", serif; }
+    .site-content .widget-area li {
+      list-style-type: none; }
 
 .content-area {
   width: 70%; }
