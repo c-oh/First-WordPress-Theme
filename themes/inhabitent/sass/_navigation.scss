@@ -2,17 +2,11 @@
 # Navigation
 --------------------------------------------------------------*/
 
+
 /* Links */
 
 a {
-	color: $color__link;
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
+	color: white;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -21,7 +15,7 @@ a {
 	&:active {
 		outline: 0;
 	}
-}
+
 
 
 /* Menus */
@@ -30,17 +24,33 @@ a {
 	clear: both;
 	display: flex;
 	background-color: transparent;
-	justify-content: space-between;
-	width: auto;
+	margin-left: 20px;
+	width: 1120px;
 	position: fixed;
 	img {
-		height: 35px;
+		height: 26px;
 	}
-	li{
+	.menu-nav-container li {
 		text-transform: uppercase;
-		color: white;
 		font: 1rem $n;
 		line-height: 28px;
+	}
+	.icon-search {
+		color: white;
+		font-size: 1rem;
+		padding: 0px;
+	}
+	fieldset{
+		border: none;
+		padding:0px;
+		input[type="search"] {
+			width: 0px;
+			padding: 0;
+			
+			&:focus {
+				outline: none;
+			}
+		}
 	}
 }
 
@@ -80,8 +90,6 @@ ul {
 li {
 	float: left;
 	position: relative;
-	&:hover>a,
-	&.focus>a {}
 }
 
 a {
@@ -90,21 +98,22 @@ a {
 }
 
 
-
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
+
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
-	
 	.main-navigation ul {
 		display: block;
 	}
 }
+
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -112,18 +121,17 @@ a {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-	
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-	
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
 	}
 }
+
 .primary_menu {
 	color: white;
 }

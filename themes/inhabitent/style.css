@@ -453,15 +453,14 @@ label {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+  color: white; }
+
+:focus {
+  outline: thin dotted; }
+
+:hover,
+:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -469,17 +468,27 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: transparent;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  width: auto;
+  margin-left: 20px;
+  width: 1120px;
   position: fixed; }
   .main-navigation img {
-    height: 35px; }
-  .main-navigation li {
+    height: 26px; }
+  .main-navigation .menu-nav-container li {
     text-transform: uppercase;
-    color: white;
     font: 1rem "novecento", sans-serif;
     line-height: 28px; }
+  .main-navigation .icon-search {
+    color: white;
+    font-size: 1rem;
+    padding: 0px; }
+  .main-navigation fieldset {
+    border: none;
+    padding: 0px; }
+    .main-navigation fieldset input[type="search"] {
+      width: 0px;
+      padding: 0; }
+      .main-navigation fieldset input[type="search"]:focus {
+        outline: none; }
 
 ul {
   display: none;
