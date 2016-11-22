@@ -1,45 +1,47 @@
 <?php
 /**
-* The template for displaying archive pages.
-*
-* @package RED_Starter_Theme
-*/
+ * The template for displaying archive pages.
+ *
+ * @package RED_Starter_Theme
+ */
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<div class="container">
-				<?php if ( have_posts() ) : ?>
-				<header class="page-header">
-					<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-					<?php the_archive_description(); ?>
-				</header>
-				<!-- .page-header -->
-				<div class="product-grid">
-					<ul>
+		<main id="main" class="site-main" role="main">
+			<?php if ( have_posts() ) : ?>
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header>
+			<!-- .page-header -->
+				<div class="boxes" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<?php while ( have_posts() ) : the_post(); ?>
-						<li>
-							<div class="thumbnail-wrap">
-								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+						<div class="product-post">
+							<div class="product-thumbnail">
+								<a href="<?php the_permalink() ; ?> ">
+									<?php the_post_thumbnail( 'large' ); ?>
 								</a>
 							</div>
-							<div class="product-wrap">
-								<h2><span><?php the_title(); ?></span></h2>
-								<p>
+							<div class="product-info">
+
+									<?php the_title('<p class="product-title">'); ?>........
 									<?php echo CFS()->get( 'product_price' ); ?>
-								</p>
+		
 							</div>
-						</li>
-						<?php endwhile; ?>
-						<?php else : ?>
-						<?php get_template_part( 'template-parts/content', 'none' ); ?>
-						<?php endif; ?>
-					</ul>
 				</div>
+						<!-- product-post -->
+						<?php endwhile ?>
+					</div>
+				</div>
+				<!-- #post-## -->
 			</div>
-			<!--.container-->
-		</main>
-		<!-- #main -->
+			<?php else : ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php endif; ?>
+
+	</main>
+	<!-- #main -->
 	</div>
 	<!-- #primary -->
 	<?php get_footer(); ?>

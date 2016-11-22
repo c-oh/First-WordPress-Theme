@@ -1,18 +1,15 @@
 <?php
 /**
- * The main template file.
+ * Template for displaying blog posts. 
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
+	<div id="primary" class="content-area-journal-posts">
+		<main id="main" class="site-mains" role="main">
 
-	<div id="primary" class="content-area">
-		<div class= "content-blog">
-		<main id="main" class="site-main" role="main" >
-        
 		<?php if ( have_posts() ) : ?>
-
+		
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -34,9 +31,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-		</div>
-	</div><!-- #primary -->
+		</main>
+		<?php get_sidebar(); ?>  
+	</div> <!-- content area -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

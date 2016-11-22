@@ -568,6 +568,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 30px; }
+  .banner-image .banner-img {
+    height: 275px;
+    width: 275px;
+    margin-top: 150px; }
 
 /* SHOP SECTION*/
 .taxonomy-loop {
@@ -591,7 +595,8 @@ a {
         flex: 23% 0 0; }
     .taxonomy-loop .taxonomy-loop-wrapper img {
       height: 70px;
-      width: 70px; }
+      width: 70px;
+      margin-left: 65px; }
     .taxonomy-loop .taxonomy-loop-wrapper a {
       text-decoration: none; }
     .taxonomy-loop .taxonomy-loop-wrapper .btn {
@@ -880,83 +885,81 @@ h6 {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .site-content .site-main {
+  .site-content .site-mains {
     margin-left: 10%;
-    -ms-flex: 70% 0 0;
-        flex: 70% 0 0;
+    -ms-flex: 75% 0 0;
+        flex: 75% 0 0;
     padding: 10% 10% 0% 0%;
     border-right: 1px solid lightgrey; }
-    .site-content .site-main .social-container {
+    .site-content .site-mains .social-container {
       display: -ms-flexbox;
       display: flex; }
-      .site-content .site-main .social-container p {
+      .site-content .site-mains .social-container p {
         margin-right: 5px; }
-      .site-content .site-main .social-container a {
+      .site-content .site-mains .social-container a {
         text-decoration: none;
         color: black;
         border: 1px solid black;
         font: 0.875rem "novecento", sans-serif;
         padding: 10px 20px;
         width: 35%; }
-  .site-content .widget-area {
-    padding: 10% 0% 0 0;
-    margin-right: 80px;
-    -ms-flex: 20% 0 0;
-        flex: 20% 0 0; }
-    .site-content .widget-area h2 {
-      font: 1.5rem "novecento-bold", sans-serif;
-      color: #2f1339;
-      line-height: 1.875rem; }
-    .site-content .widget-area a {
-      color: #248A83;
-      line-height: 28px; }
-    .site-content .widget-area i {
-      margin-right: 5px; }
-    .site-content .widget-area p {
-      font: 1rem "merriweatherlight", serif; }
-    .site-content .widget-area span {
-      font: 1rem "merriweatherbold", serif; }
-    .site-content .widget-area li {
-      list-style-type: none; }
 
-.content-404, .content-blog > {
+.widget-area {
+  padding: 10% 0% 0 0;
+  margin-right: 80px;
+  -ms-flex: 26% 0 0;
+      flex: 26% 0 0; }
+  .widget-area h2 {
+    font: 1.5rem "novecento-bold", sans-serif;
+    color: #2f1339;
+    line-height: 1.875rem; }
+  .widget-area a {
+    color: #248A83;
+    line-height: 28px; }
+  .widget-area i {
+    margin-right: 5px; }
+  .widget-area p {
+    font: 1rem "merriweatherlight", serif; }
+  .widget-area span {
+    font: 1rem "merriweatherbold", serif; }
+  .widget-area li {
+    list-style-type: none; }
+
+.content-area-journal-posts {
   width: 70%; }
-
-.entry-header {
-  position: relative; }
-  .entry-header h2,
-  .entry-header .entry-title {
-    font-size: 2.063rem;
-    line-height: 2.625rem;
-    letter-spacing: 0.125rem;
-    padding: 1rem;
+  .content-area-journal-posts .entry-header {
+    position: relative; }
+    .content-area-journal-posts .entry-header h2,
+    .content-area-journal-posts .entry-header .entry-title {
+      font-size: 2.063rem;
+      line-height: 2.625rem;
+      letter-spacing: 0.125rem;
+      padding: 1rem;
+      position: absolute;
+      margin-top: 48px;
+      max-width: 80%;
+      top: 0;
+      background-color: #248A83;
+      color: #f1f1f1; }
+    .content-area-journal-posts .entry-header img {
+      width: 1000px;
+      height: auto; }
+    .content-area-journal-posts .entry-header a {
+      color: #f1f1f1;
+      text-decoration: none; }
+  .content-area-journal-posts .entry-meta {
+    font-size: 0.875rem;
+    text-transform: uppercase;
     position: absolute;
-    margin-top: 48px;
-    max-width: 80%;
-    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px;
+    margin-bottom: 7px;
     background-color: #248A83;
     color: #f1f1f1; }
-  .entry-header img {
-    width: 1000px;
-    height: auto; }
-  .entry-header a {
-    color: #f1f1f1;
-    text-decoration: none; }
-
-.entry-meta {
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 7px;
-  margin-bottom: 7px;
-  background-color: #248A83;
-  color: #f1f1f1; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
+  .content-area-journal-posts .page-links {
+    clear: both;
+    margin: 0 0 1.5em; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -964,11 +967,46 @@ h6 {
   display: none; }
 
 /* Comments */
+.comments-area {
+  margin-left: 10%;
+  padding: 10% 10% 0 0; }
+
 .comment-content a {
   word-wrap: break-word; }
 
 .bypostauthor {
   display: block; }
+
+/*taxonomy-product*/
+.content-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .content-area .page-header {
+    border-bottom: 1px dashed #666;
+    margin-bottom: 3rem;
+    text-align: center;
+    font: 1rem "merriweatherlight", serif;
+    line-height: 1.75em; }
+    .content-area .page-header .page-title {
+      font: 2rem "novecento-bold", sans-serif;
+      line-height: 3em; }
+  .content-area .boxes {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .content-area .boxes .product-post {
+      border: 1px solid #e1e1e1;
+      width: 23%; }
+      .content-area .boxes .product-post .product-thumbnail {
+        height: 179px; }
+      .content-area .boxes .product-post .product-title {
+        font: 1rem "merriweatherlight", serif;
+        line-height: 28px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1074,11 +1112,6 @@ footer {
 .error-404-not-found h1 {
   line-height: 1.25;
   font: 2rem "novecento-bold", sans-serif; }
-
-.page-title {
-  text-align: center;
-  font: 2rem "novecento-bold", sans-serif;
-  line-height: 3rem; }
 
 html {
   font-size: 16px; }

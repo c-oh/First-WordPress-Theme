@@ -1,38 +1,26 @@
 <?php
 /**
-* The template for displaying all single posts.
-*
-* @package Inhabitent_Theme
-*/
+ * The template for displaying all single product posts.
+ *
+ * @package RED_Starter_Theme
+ */
 get_header(); ?>
+
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<article class="one-product container">
 				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="product-img">
-					<?php the_post_thumbnail( 'large' ); ?>
-				</div>
-				<div class="product-desc">
-					<h1>
-						<?php the_title(); ?>
-					</h1>
-					<h2>
-						<?php echo CFS()->get( 'product_price' ); ?>
-					</h2>
-					<?php the_content(); ?>
-					<div class="social-wrap">
-						<p class="white-link"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a></p>
-						<p class="white-link"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a></p>
-						<p class="white-link"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a></p>
-					</div>
-					<!--.social-wrap-->
-				</div>
-				<!--.product-desc-->
-				<?php endwhile; // End of the loop. ?>
-			</article>
-			<!--.container-->
-		</main>
-		<!-- #main -->
-	</div>
-	<!-- #primary -->
-	<?php get_footer(); ?>
+
+				<?php get_template_part( 'template-parts/product-archive', 'single-product'); ?>
+
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+			?>
+
+		<?php endwhile; // End of the loop. ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>

@@ -6,16 +6,12 @@
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
-<?php
-echo '<link href="/style.css" rel="stylesheet">';
-?>
-	<div id="primary" class="content-area">
-		<div class = "content-404">
-		<main id="main" class="site-main" role="main">
 
-			<section class="error-404-not-found">
+	<div id="primary" class="content-area content-area-journal-posts">
+		<main id="main" class="site-mains" role="main">
+
+			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
@@ -53,8 +49,7 @@ echo '<link href="/style.css" rel="stylesheet">';
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
-		</div>
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
