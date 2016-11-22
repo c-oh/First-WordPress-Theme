@@ -843,6 +843,15 @@ h6 {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0; }
+  .page-content a,
+  .entry-content a,
+  .entry-summary a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    font: 0.875rem "novecento", sans-serif;
+    padding: 10px 20px;
+    width: 35%; }
 
 .site-content {
   display: -ms-flexbox;
@@ -1041,6 +1050,17 @@ footer {
 
 .logo img {
   margin-left: 219px; }
+
+.error-404-not-found h1 {
+  line-height: 1.25;
+  font: 2rem "novecento-bold", sans-serif; }
+
+.shop-area {
+  width: 100%; }
+  .shop-area .page-title {
+    text-align: center;
+    font: 2rem "novecento-bold", sans-serif;
+    line-height: 3rem; }
 
 html {
   font-size: 16px; }

@@ -26,6 +26,14 @@
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+	a {
+				text-decoration: none;
+				color: black;
+				border: 1px solid black;
+				font: 0.875rem $n;
+				padding: 10px 20px;
+				width: 35%;
+			}
 }
 
 .site-content {

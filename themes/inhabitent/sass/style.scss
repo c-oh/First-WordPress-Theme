@@ -48,7 +48,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 // Imported but not included in the stylesheet.
 
 @import "variables";
-@import "mixins";
+@import "mixins"; 
 
 // CSS included in style.css.
 
@@ -67,6 +67,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "page-templates";
 @import "footer";
 @import "404";
+@import "archive_products";
 
 
 
