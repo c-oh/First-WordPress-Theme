@@ -12,6 +12,7 @@ get_header(); ?>
 echo '<link href="/style.css" rel="stylesheet">';
 ?>
 	<div id="primary" class="content-area">
+		<div class = "content-404">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404-not-found">
@@ -52,6 +53,8 @@ echo '<link href="/style.css" rel="stylesheet">';
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
 <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

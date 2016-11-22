@@ -899,7 +899,7 @@ h6 {
     .site-content .widget-area li {
       list-style-type: none; }
 
-.content-area {
+.content-404, .content-blog > {
   width: 70%; }
 
 .entry-header {
@@ -1055,12 +1055,10 @@ footer {
   line-height: 1.25;
   font: 2rem "novecento-bold", sans-serif; }
 
-.shop-area {
-  width: 100%; }
-  .shop-area .page-title {
-    text-align: center;
-    font: 2rem "novecento-bold", sans-serif;
-    line-height: 3rem; }
+.page-title {
+  text-align: center;
+  font: 2rem "novecento-bold", sans-serif;
+  line-height: 3rem; }
 
 html {
   font-size: 16px; }
