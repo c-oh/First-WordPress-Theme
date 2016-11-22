@@ -490,9 +490,11 @@ a {
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+      .main-navigation ul ul li {
+        font: 1rem "novecento", sans-serif; }
+        .main-navigation ul ul li:hover > ul,
+        .main-navigation ul ul li.focus > ul {
+          left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -744,9 +746,10 @@ h6 {
     margin-top: 22%; }
 
 .about-section {
-  margin-left: 22%;
+  margin-left: 16%;
   font: 1rem "merriweatherlight", serif, sans-serif;
-  line-height: 28px; }
+  line-height: 28px;
+  width: 854px; }
   .about-section h2 {
     text-align: center;
     font: 2.063rem "novecento-bold", sans-serif;
