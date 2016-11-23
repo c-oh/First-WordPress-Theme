@@ -10,7 +10,6 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-		  <section class ="product-nav">
 			<header class="page-header">
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -29,14 +28,13 @@ get_header(); ?>
 	  <p><a href="<?php echo $url ?>"><?php echo $term->name ?></a></p>
 	<?php endforeach;?>
    </div>
-</section>
+
 
 <!---Showing Grid -->
-		<div class = "boxes">
+		<div class = "boxes-archive">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class = "product-post">
-					<div class="product-post">
 							<div class="product-thumbnail">
 								<a href="<?php the_permalink() ; ?> ">
 									<?php the_post_thumbnail( 'large' ); ?>
@@ -47,7 +45,7 @@ get_header(); ?>
 									<?php the_title('<p class="product-title">'); ?>........
 									<?php echo CFS()->get( 'product_price' ); ?>
 		
-							</div>
+		
 				</div>
 
 

@@ -997,14 +997,20 @@ h6 {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    .content-area .boxes .product-post {
-      border: 1px solid #e1e1e1;
-      width: 23%; }
-      .content-area .boxes .product-post .product-thumbnail {
-        height: 179px; }
-      .content-area .boxes .product-post .product-title {
-        font: 1rem "merriweatherlight", serif;
-        line-height: 28px; }
+  .content-area .product-post {
+    border: 1px solid #e1e1e1;
+    width: 23%; }
+    .content-area .product-post .product-thumbnail {
+      height: 179px; }
+    .content-area .product-post .product-title {
+      font: 1rem "merriweatherlight", serif;
+      line-height: 28px; }
+
+.boxes-archive {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 /*--------------------------------------------------------------
 # Media
