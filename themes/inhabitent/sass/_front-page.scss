@@ -40,13 +40,14 @@
       text-decoration: none;
     }
     .btn {
-      background: #248a83;
-      color: white;
-      text-transform: uppercase;
-      font: 1rem $n;
-      cursor: pointer;
-      padding: 12px 24px;
-      font-family: $n
+     background: $color_everywhere;
+    color: #fff;
+    text-transform: uppercase;
+    font: 1rem $n;
+    cursor: pointer;
+    padding: 13px 4px;
+    width: 114px;
+    margin-left: 49px;
     }
   }
 }

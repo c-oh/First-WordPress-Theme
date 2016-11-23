@@ -599,13 +599,14 @@ a {
     .taxonomy-loop .taxonomy-loop-wrapper a {
       text-decoration: none; }
     .taxonomy-loop .taxonomy-loop-wrapper .btn {
-      background: #248a83;
-      color: white;
+      background: #248A83;
+      color: #fff;
       text-transform: uppercase;
       font: 1rem "novecento", sans-serif;
       cursor: pointer;
-      padding: 12px 24px;
-      font-family: "novecento", sans-serif; }
+      padding: 13px 4px;
+      width: 114px;
+      margin-left: 49px; }
 
 h6 {
   font: 2rem "novecento", sans-serif;
@@ -885,10 +886,7 @@ h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .site-content .site-mains {
-    margin-left: 10%;
-    -ms-flex: 75% 0 0;
-        flex: 75% 0 0;
-    padding: 10% 10% 0% 0%;
+    padding: 10% 4% 0% 0%;
     border-right: 1px solid lightgrey; }
     .site-content .site-mains .social-container {
       display: -ms-flexbox;
@@ -903,9 +901,15 @@ h6 {
         padding: 10px 20px;
         width: 35%; }
 
+#primary {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: auto; }
+
 .widget-area {
-  padding: 10% 0% 0 0;
-  margin-right: 80px;
+  padding: 10% 13px 0 0;
+  margin-left: 80px;
   -ms-flex: 26% 0 0;
       flex: 26% 0 0; }
   .widget-area h2 {

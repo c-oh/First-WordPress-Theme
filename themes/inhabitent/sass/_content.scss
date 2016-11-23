@@ -39,9 +39,7 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		.site-mains {
-			margin-left: 10%;
-			flex: 75% 0 0;
-			padding: 10% 10% 0% 0%;
+			padding: 10% 4% 0% 0%;
 			border-right: 1px solid lightgrey;
 			.social-container {
 				display: flex;
@@ -60,9 +58,15 @@
 		}
 	}
 	
+	#primary {
+	display: flex;
+	width: 1120px;
+	margin: auto;
+}
+
 	.widget-area {
-		padding: 10% 0% 0 0;
-		margin-right: 80px;
+		padding: 10% 13px 0 0;
+		margin-left: 80px;
 		flex: 26% 0 0;
 		h2 {
 			font: 1.5rem $nb;

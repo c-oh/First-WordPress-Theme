@@ -25,13 +25,13 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt= "Company logo"> </a>
 
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<div class="header-search"><?php get_search_form(); ?></div>
 
 				</nav><!-- #site-navigation -->
+					</header><!-- #masthead -->
+
 				<div class= "herobanner">
 				</div>
-			</header><!-- #masthead -->
-
+		
 			<div id="content" class="site-content">
