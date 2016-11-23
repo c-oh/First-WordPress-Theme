@@ -595,8 +595,7 @@ a {
         flex: 23% 0 0; }
     .taxonomy-loop .taxonomy-loop-wrapper img {
       height: 70px;
-      width: 70px;
-      margin-left: 65px; }
+      width: 70px; }
     .taxonomy-loop .taxonomy-loop-wrapper a {
       text-decoration: none; }
     .taxonomy-loop .taxonomy-loop-wrapper .btn {
@@ -999,20 +998,28 @@ h6 {
         justify-content: space-between; }
   .content-area .product-post {
     border: 1px solid #e1e1e1;
-    width: 23%; }
+    width: 23%;
+    margin-bottom: 1.5rem; }
     .content-area .product-post .product-thumbnail {
-      height: 179px; }
-    .content-area .product-post .product-title {
-      font: 1rem "merriweatherlight", serif;
-      line-height: 28px; }
-
-.boxes-archive {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      overflow: hidden; }
+      .content-area .product-post .product-thumbnail img {
+        height: 250px;
+        width: auto;
+        background-size: cover; }
+    .content-area .product-post .product-info {
+      padding: .75rem 1rem; }
+      .content-area .product-post .product-info .product-title {
+        font: 1rem "merriweatherlight", serif;
+        line-height: 28px; }
+        .content-area .product-post .product-info .product-title ::before {
+          content: ".................................."; }
+  .content-area .boxes-archive {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1120,6 +1127,15 @@ footer {
 .error-404-not-found h1 {
   line-height: 1.25;
   font: 2rem "novecento-bold", sans-serif; }
+
+.shop-page-product-types {
+  margin-bottom: 63px; }
+  .shop-page-product-types p {
+    display: inline-block;
+    margin: 0 1.5rem; }
+    .shop-page-product-types p a {
+      font: 1.188rem "novecento", sans-serif;
+      color: #21759b; }
 
 html {
   font-size: 16px; }

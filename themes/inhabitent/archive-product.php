@@ -15,7 +15,7 @@ get_header(); ?>
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			
 
 
   <!--Calling Product Types-->
@@ -28,7 +28,7 @@ get_header(); ?>
 	  <p><a href="<?php echo $url ?>"><?php echo $term->name ?></a></p>
 	<?php endforeach;?>
    </div>
-
+</header><!-- .page-header -->
 
 <!---Showing Grid -->
 		<div class = "boxes-archive">
@@ -42,7 +42,7 @@ get_header(); ?>
 							</div>
 							<div class="product-info">
 
-									<?php the_title('<p class="product-title">'); ?>........
+									<?php the_title('<h2 class="product-title">'); ?>
 									<?php echo CFS()->get( 'product_price' ); ?>
 		
 		

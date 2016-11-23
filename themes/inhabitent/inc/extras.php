@@ -41,19 +41,14 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
-function get_all_product_posts($query){
-	if(is_post_type_archive('product')&& !is_admin() && $query->is_main_query ){
-		$query->set('post_per_page', '16');
+function get_all_product_posts( $query ) {
+	if(is_post_type_archive('product') && !is_admin() && $query->is_main_query()) {
+		$query->set('posts_per_page', '16');
 		$query->set('orderby', 'title');
-		$query->set('order', 'ASC');
-	}
-     elseif (is_tax() ) {
-	$query->set('posts_per_page', '4');
-	$query->set('orderby', 'title');
-	$query->set('order', 'ASC');
+		$query->set('order' , 'ASC');
 	}
 }
-add_action('pre_get_posts', 'get_all_product_posts');
+add_action( 'pre_get_posts', 'get_all_product_posts');
 
 function my_styles_method() {
     

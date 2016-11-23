@@ -173,19 +173,30 @@
 			.product-post {
 				border: 1px solid #e1e1e1;
 				width: 23%;
+				    margin-bottom: 1.5rem;
 				.product-thumbnail {
-					height: 179px;
+					overflow: hidden;
+					img{
+							height: 250px;
+							width: auto;
+							        background-size: cover;
+					}
 				}
+				.product-info{
+					padding: .75rem 1rem;
 				.product-title {
 					font: 1rem $mwl;
 					line-height: 28px;
+					::before {
+                    content: "..................................";
 				}
 			}
 		}
+			}
 	
-
 	.boxes-archive{
 		display: flex;   
     	flex-wrap: wrap;
 		justify-content: space-around;
+	}
 	}
