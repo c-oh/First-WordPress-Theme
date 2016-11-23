@@ -27,6 +27,7 @@ get_header(); ?>
         </div>
         <?php endforeach ?>
         </div>
+        </section>
         <!-- BLOG -->
         <section class="journal">
             <h6>inhabitent journal</h6>

@@ -1,0 +1,26 @@
+.post-78{
+    .entry-header{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+    .entry-content{
+        h2{
+    font: 2.063rem $nb;
+    color: $title_color;
+}
+        }
+    }
+
+
+    .wpcf7-submit{
+background: $color_everywhere;
+    border: none;
+ 
+    color:white;
+    cursor: pointer;
+   font: 0.9rem $n;
+
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}

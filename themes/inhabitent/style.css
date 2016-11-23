@@ -384,38 +384,6 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
 /* Fields */
 input[type="text"],
 input[type="email"],
@@ -761,6 +729,33 @@ h6 {
   .read-more-btn:hover {
     background: #248a83; }
 
+.site-mainsproduct {
+  padding-top: 3rem;
+  margin: 56px; }
+
+.sp-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .sp-container .sp-thumbnail {
+    width: 48%; }
+  .sp-container .sp-info {
+    width: 48%; }
+    .sp-container .sp-info h2 {
+      font: 2rem "novecento-bold", sans-serif;
+      color: #d99054;
+      line-height: 3rem;
+      margin: 0; }
+    .sp-container .sp-info .sp-price {
+      font: 1.75rem "novecento", sans-serif;
+      margin: 0;
+      margin-top: 10px; }
+    .sp-container .sp-info .sp-description {
+      font: 1rem "merriweatherlight", serif;
+      line-height: 1.750rem;
+      margin-bottom: 0; }
+
 .about-hero {
   overflow: hidden;
   height: 100vh;
@@ -894,18 +889,19 @@ h6 {
   .site-content .site-mains {
     padding: 10% 4% 0% 0%;
     border-right: 1px solid lightgrey; }
-    .site-content .site-mains .social-container {
-      display: -ms-flexbox;
-      display: flex; }
-      .site-content .site-mains .social-container p {
-        margin-right: 5px; }
-      .site-content .site-mains .social-container a {
-        text-decoration: none;
-        color: black;
-        border: 1px solid black;
-        font: 0.875rem "novecento", sans-serif;
-        padding: 10px 20px;
-        width: 35%; }
+
+.social-media-button {
+  display: -ms-flexbox;
+  display: flex; }
+  .social-media-button p {
+    margin-right: 5px; }
+  .social-media-button a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    font: 0.875rem "novecento", sans-serif;
+    padding: 10px 20px;
+    width: 102%; }
 
 #primary {
   display: -ms-flexbox;
@@ -935,7 +931,10 @@ h6 {
     list-style-type: none; }
 
 .content-area-journal-posts {
-  width: 70%; }
+  width: 70%;
+  margin-left: 102px;
+  margin-right: 29px;
+  width: 1120px; }
   .content-area-journal-posts .entry-header {
     position: relative; }
     .content-area-journal-posts .entry-header h2,
@@ -1146,6 +1145,24 @@ object {
     .shop-page-product-types p a {
       font: 1.188rem "novecento", sans-serif;
       color: #21759b; }
+
+.post-78 .entry-header {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.post-78 .entry-content h2 {
+  font: 2.063rem "novecento-bold", sans-serif;
+  color: #2f1339; }
+
+.wpcf7-submit {
+  background: #248A83;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font: 0.9rem "novecento", sans-serif;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 html {
   font-size: 16px; }

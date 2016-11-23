@@ -1,0 +1,35 @@
+.site-mainsproduct{
+    padding-top: 3rem;
+    margin: 56px;
+}
+
+.sp-container {
+        display:flex;
+    justify-content: space-between;
+        .sp-thumbnail {
+            width: 48%;
+        }
+        .sp-info{
+            width: 48%;
+            h2{
+                font: 2rem $nb;
+                color: $color_footer;
+                line-height: 3rem;
+                margin:0;
+            }
+            .sp-price{
+                font: 1.750rem $n;
+
+                   margin: 0;
+    margin-top: 10px;
+                
+            }
+            .sp-description{
+                font: 1rem $mwl;
+                line-height: 1.750rem;
+                margin-bottom:0;
+            }
+        }
+    }
+
+ 

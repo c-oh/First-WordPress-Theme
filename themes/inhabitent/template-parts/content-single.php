@@ -31,7 +31,7 @@
 		<!-- .entry-content -->
 	</article>
 	<!-- #post-## -->
-	<div class="social-container">
+	<div class="social-media-button">
 		<p class="white-link"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a></p>
 		<p class="white-link"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a></p>
 		<p class="white-link"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a></p>

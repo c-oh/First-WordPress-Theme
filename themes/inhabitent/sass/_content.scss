@@ -41,7 +41,10 @@
 		.site-mains {
 			padding: 10% 4% 0% 0%;
 			border-right: 1px solid lightgrey;
-			.social-container {
+		}
+	}
+	
+	.social-media-button {
 				display: flex;
 				p {
 					margin-right: 5px;
@@ -52,12 +55,10 @@
 					border: 1px solid black;
 					font: 0.875rem $n;
 					padding: 10px 20px;
-					width: 35%;
+					width: 102%;
 				}
 			}
-		}
-	}
-	
+			
 	#primary {
 	display: flex;
 	width: 1120px;
@@ -93,6 +94,9 @@
 	
 	.content-area-journal-posts {
 		width: 70%;
+		margin-left: 102px;
+    margin-right: 29px;
+    width: 1120px;
 		.entry-header {
 			position: relative;
 			h2,
