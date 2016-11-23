@@ -39,6 +39,7 @@
 			width:70%;
 			padding: 10% 4% 0% 0%;
 			border-right: 1px solid lightgrey;
+			margin-left: 74px;
 		}
 	}
 	
@@ -87,6 +88,9 @@
 		}
 		li {
 			list-style-type: none;
+		}
+		.textwidget p{
+			display: flex;
 		}
 	}
 	
@@ -177,7 +181,7 @@
 				width: 23%;
 				    margin-bottom: 1.5rem;
 				.product-thumbnail {
-					overflow: hidden;
+					background: #e1e1e1;
 					img{
 							height: 250px;
 							width: auto;

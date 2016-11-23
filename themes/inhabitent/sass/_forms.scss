@@ -77,6 +77,11 @@
 		#author input {
 			width: 100%;
 		}
+		.logged-in-as{
+			a{
+				color: black;
+			}
+		}
 	}
 }
 
@@ -112,10 +117,25 @@ textarea {
 }
 
 .search-form{
-	fieldset{
-	border: white;
+	fieldset {
+			border:white;
+	a{
+		text-decoration:none;
+		color:transparent;
+		border:none;
+		padding: none;
 	.search-field{
 		font: 1rem $mwl;
 	}
+	}
+}
+}
+
+.no-results{
+	.page-header{
+		border-bottom: 1px solid #e1e1e1;
+	}
+	.page-content{
+		color:white;
 	}
 }

@@ -434,6 +434,8 @@ table {
     color: #d99054; }
   .comments-area .comment-form #author input {
     width: 100%; }
+  .comments-area .comment-form .logged-in-as a {
+    color: black; }
 
 /* Fields */
 input[type="text"],
@@ -467,8 +469,19 @@ textarea {
 
 .search-form fieldset {
   border: white; }
-  .search-form fieldset .search-field {
-    font: 1rem "merriweatherlight", serif; }
+  .search-form fieldset a {
+    text-decoration: none;
+    color: transparent;
+    border: none;
+    padding: none; }
+    .search-form fieldset a .search-field {
+      font: 1rem "merriweatherlight", serif; }
+
+.no-results .page-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+.no-results .page-content {
+  color: white; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -489,7 +502,7 @@ a {
   clear: both;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #e1e1e1;
+  background: rgba(255, 255, 255, 0.8);
   width: 100%;
   position: fixed;
   -ms-flex-pack: justify;
@@ -829,6 +842,8 @@ h6 {
     text-align: center;
     font: 2.063rem "novecento-bold", sans-serif;
     color: #2f1339; }
+  .about-section .content-area {
+    width: 100%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -934,7 +949,8 @@ h6 {
 .site-content .site-mains {
   width: 70%;
   padding: 10% 4% 0% 0%;
-  border-right: 1px solid lightgrey; }
+  border-right: 1px solid lightgrey;
+  margin-left: 74px; }
 
 .social-media-button {
   display: -ms-flexbox;
@@ -974,6 +990,9 @@ h6 {
     font: 1rem "merriweatherbold", serif; }
   .widget-area li {
     list-style-type: none; }
+  .widget-area .textwidget p {
+    display: -ms-flexbox;
+    display: flex; }
 
 .content-area-journal-posts {
   width: 70%;
@@ -1051,7 +1070,7 @@ h6 {
     width: 23%;
     margin-bottom: 1.5rem; }
     .content-area .product-post .product-thumbnail {
-      overflow: hidden; }
+      background: #e1e1e1; }
       .content-area .product-post .product-thumbnail img {
         height: 250px;
         width: auto;
@@ -1074,7 +1093,12 @@ h6 {
 .search-results .page-title {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font: 2rem "novecento", sans-serif; }
+  font: 2rem "novecento-bold", sans-serif; }
+
+.search-results .status-publish .entry-title {
+  background: none;
+  color: #248a83;
+  top: -95px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1179,9 +1203,16 @@ object {
 .logo img {
   margin-left: 219px; }
 
-.error-404-not-found h1 {
+.error-404 h1 {
   line-height: 1.25;
   font: 2rem "novecento-bold", sans-serif; }
+
+.error-404 .page-content {
+  font: 1rem "merriweatherlight", serif; }
+
+.error-404 .widgettitle, .error-404 .widget-title {
+  font: 1.5rem "novecento-bold", sans-serif;
+  color: #2f1339; }
 
 .shop-page-product-types {
   margin-bottom: 63px; }

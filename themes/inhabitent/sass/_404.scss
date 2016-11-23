@@ -1,6 +1,14 @@
-.error-404-not-found{
+.error-404{
 h1{
     line-height: 1.25;
     font: 2rem $nb;
 }
+.page-content{
+    font: 1rem $mwl;
+}
+
+    .widgettitle, .widget-title{
+     font: 1.5rem $nb;
+     color: $title_color;
+    }
 }

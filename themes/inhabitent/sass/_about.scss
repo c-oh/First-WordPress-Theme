@@ -11,6 +11,7 @@
         text-align: center;
            margin-top: 22%;
     }
+   
 }
 
 .about-section{
@@ -23,4 +24,7 @@ h2 {
     font: 2.063rem $nb;
     color: $title_color;
 }
+ .content-area{
+        width: 100%;
+    }
 }
