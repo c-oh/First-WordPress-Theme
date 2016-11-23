@@ -470,25 +470,31 @@ a {
   background-color: transparent;
   margin-left: 20px;
   width: 1120px;
-  position: fixed; }
+  position: fixed;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .main-navigation img {
     height: 26px; }
-  .main-navigation .menu-nav-container li {
-    text-transform: uppercase;
-    font: 1rem "novecento", sans-serif;
-    line-height: 28px; }
-  .main-navigation .icon-search {
-    color: white;
-    font-size: 1rem;
-    padding: 0px; }
-  .main-navigation fieldset {
-    border: none;
-    padding: 0px; }
-    .main-navigation fieldset input[type="search"] {
-      width: 0px;
-      padding: 0; }
-      .main-navigation fieldset input[type="search"]:focus {
-        outline: none; }
+  .main-navigation .nav-menu-mini {
+    width: 33%; }
+    .main-navigation .nav-menu-mini .menu-nav-container li {
+      text-transform: uppercase;
+      font: 1rem "novecento", sans-serif;
+      line-height: 28px;
+      padding-left: 1.5rem; }
+    .main-navigation .nav-menu-mini .icon-search {
+      color: white;
+      font-size: 1rem;
+      padding: 0px; }
+    .main-navigation .nav-menu-mini fieldset {
+      border: none;
+      padding: 0px;
+      padding-left: 1.5rem; }
+      .main-navigation .nav-menu-mini fieldset input[type="search"] {
+        width: 0px;
+        padding: 0; }
+        .main-navigation .nav-menu-mini fieldset input[type="search"]:focus {
+          outline: none; }
 
 ul {
   display: none;

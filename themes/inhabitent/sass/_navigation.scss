@@ -27,13 +27,18 @@ a {
 	margin-left: 20px;
 	width: 1120px;
 	position: fixed;
+	justify-content: space-between;
 	img {
 		height: 26px;
 	}
+	.nav-menu-mini{
+		width: 33%;
+	
 	.menu-nav-container li {
 		text-transform: uppercase;
 		font: 1rem $n;
 		line-height: 28px;
+		padding-left: 1.5rem;
 	}
 	.icon-search {
 		color: white;
@@ -43,6 +48,7 @@ a {
 	fieldset{
 		border: none;
 		padding:0px;
+			padding-left: 1.5rem;
 		input[type="search"] {
 			width: 0px;
 			padding: 0;
@@ -54,6 +60,7 @@ a {
 	}
 }
 
+}
 ul {
 	display: none;
 	list-style: none;

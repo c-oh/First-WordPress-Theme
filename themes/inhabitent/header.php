@@ -24,14 +24,15 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt= "Company logo"> </a>
-
+<div class= "nav-menu-mini">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<div class="header-search"><?php get_search_form(); ?></div>
-
+</div>
+	</div>
 				</nav><!-- #site-navigation -->
 					</header><!-- #masthead -->
 
 				<div class= "herobanner">
-				</div>
+			
 		
 			<div id="content" class="site-content">
