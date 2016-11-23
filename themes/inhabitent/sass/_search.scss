@@ -12,3 +12,12 @@
         }
     }
 }
+
+.search-no-results, .search-results{
+    .site-content{
+        display:flex;
+    }
+    .site-mains{
+        width: 100%;
+    }
+}

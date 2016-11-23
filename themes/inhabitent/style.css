@@ -510,28 +510,26 @@ a {
   .main-navigation img {
     height: 26px;
     margin-left: 122px; }
-  .main-navigation .nav-menu-mini {
-    width: 33%; }
-    .main-navigation .nav-menu-mini .menu li {
-      text-transform: uppercase;
-      font: 1rem "novecento", sans-serif;
-      line-height: 28px;
-      padding-left: 1.5rem; }
-      .main-navigation .nav-menu-mini .menu li a {
-        color: #248A83; }
-    .main-navigation .nav-menu-mini .icon-search {
-      color: #248A83;
-      font-size: 1rem;
-      padding: 0px; }
-    .main-navigation .nav-menu-mini fieldset {
-      border: none;
-      padding: 0px;
-      padding-left: 1.5rem; }
-      .main-navigation .nav-menu-mini fieldset input[type="search"] {
-        width: 0px;
-        padding: 0; }
-        .main-navigation .nav-menu-mini fieldset input[type="search"]:focus {
-          outline: none; }
+  .main-navigation .menu li {
+    text-transform: uppercase;
+    font: 1rem "novecento", sans-serif;
+    line-height: 28px;
+    padding-left: 1.5rem; }
+    .main-navigation .menu li a {
+      color: #248A83; }
+  .main-navigation .icon-search {
+    color: #248A83;
+    font-size: 1rem;
+    padding: 0px; }
+  .main-navigation fieldset {
+    border: none;
+    padding: 0px;
+    padding-left: 1.5rem; }
+    .main-navigation fieldset input[type="search"] {
+      width: 0px;
+      padding: 0; }
+      .main-navigation fieldset input[type="search"]:focus {
+        outline: none; }
 
 ul {
   display: none;
@@ -595,6 +593,55 @@ a {
 
 .primary_menu {
   color: white; }
+
+.site-header {
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.main-navigation {
+  padding: 1.55em 0;
+  margin: 0 auto;
+  height: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .main-navigation a {
+    margin-bottom: 0.5rem; }
+  .main-navigation img {
+    margin-top: 1.5rem; }
+
+.nav-menu-mini {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end; }
+
+.logged-in .site-header {
+  top: 32px; }
+
+.header-search fieldset {
+  border: none;
+  margin-top: 7px; }
+  .header-search fieldset .icon-search {
+    display: inline; }
+  .header-search fieldset button {
+    visibility: hidden; }
+  .header-search fieldset .fa {
+    font-size: 1rem;
+    color: #248A83; }
+  .header-search fieldset input[type="search"] {
+    border: none;
+    width: 0px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    .header-search fieldset input[type="search"]:focus {
+      outline: none; }
 
 .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/home-hero.jpg");
@@ -968,7 +1015,8 @@ h6 {
 #primary {
   display: -ms-flexbox;
   display: flex;
-  margin: auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 .widget-area {
   padding: 10% 13px 0 0;
@@ -1099,6 +1147,13 @@ h6 {
   background: none;
   color: #248a83;
   top: -95px; }
+
+.search-no-results .site-content, .search-results .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-no-results .site-mains, .search-results .site-mains {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Media
