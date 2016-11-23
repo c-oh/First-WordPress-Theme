@@ -1,26 +1,37 @@
-.post-78{
-    .entry-header{
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.post-78 {
+    .entry-header {
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
-    .entry-content{
-        h2{
-    font: 2.063rem $nb;
-    color: $title_color;
-}
+    .entry-content {
+        h2 {
+            font: 2.063rem $nb;
+            color: $title_color;
         }
     }
+}
 
-
-    .wpcf7-submit{
-background: $color_everywhere;
-    border: none;
- 
-    color:white;
-    cursor: pointer;
-   font: 0.9rem $n;
-
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
+.wpcf7 {
+    h2 {
+        font: 2.063rem $nb;
+        color: $title_color;
+    }
+    label {
+        font: 1rem $n;
+        color: $title_color;
+        .star {
+            font: 1rem $n;
+            color: $color_footer;
+        }
+    }
+    .wpcf7-submit {
+        background: $color_everywhere;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font: 0.9rem $n;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 }

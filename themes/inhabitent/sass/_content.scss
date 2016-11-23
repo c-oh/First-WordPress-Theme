@@ -35,10 +35,8 @@
 	}
 	
 	.site-content {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
 		.site-mains {
+			width:70%;
 			padding: 10% 4% 0% 0%;
 			border-right: 1px solid lightgrey;
 		}
@@ -61,7 +59,7 @@
 			
 	#primary {
 	display: flex;
-	width: 1120px;
+	
 	margin: auto;
 }
 
@@ -145,10 +143,6 @@
 	}
 	/* Comments */
 	
-	.comments-area {
-		margin-left: 10%;
-		padding: 10% 10% 0 0;
-	}
 	
 	.comment-content a {
 		word-wrap: break-word;

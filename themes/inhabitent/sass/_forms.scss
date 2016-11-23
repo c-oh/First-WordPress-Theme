@@ -2,6 +2,84 @@
 # Forms
 --------------------------------------------------------------*/
 
+.form-submit {
+	.submit {
+		background: $color_everywhere;
+		border: none;
+		color: white;
+		cursor: pointer;
+		font: 0.9rem $n;
+		padding: .75rem 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+.comments-area {
+	width: 60%;
+	margin-left: 5%;
+	.comments-title {
+		font: 2.1rem $nb;
+		color: $title_color;
+	}
+	.comment-list {
+		.comment-body {
+			display:flex;
+			.comment-author-avatar {
+				img {
+					border-radius: 30px;
+				}
+			}
+			.comment-body{
+			.comment-content {				
+				.fn {
+					font: 1rem $mwb;
+				}
+				margin-left: 10px;
+				.comment-metadata {
+					font: 1rem $mwl;
+					color: grey;
+					a{
+						color: $color_everywhere;
+					}
+				}
+			}
+			p {
+				font: 1rem $mwl;
+			}
+			.reply{
+				a{
+					color: $color_everywhere;
+					font: 1rem $mwl;
+				}
+			}
+		}
+	}
+	}
+	.comment-form {
+		p {
+			font: 1rem $mwl;
+		}
+		h3 {
+			margin-top: 1.5rem;
+			font: 1.8rem $n;
+			line-height: 1.25;
+		}
+		label {
+			font: 1rem $n;
+			color: $title_color;
+			margin-bottom: .5rem;
+		}
+		span {
+			font: 1rem $n;
+			color: $color_footer;
+		}
+		#author input {
+			width: 100%;
+		}
+	}
+}
+
 
 /* Fields */
 
@@ -12,9 +90,9 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
 	border-radius: 3px;
-
+	background-color: #f4f4f4;
+	border: 1px solid #e1e1e1;
 	&:focus {
 		color: #111;
 	}
@@ -33,9 +111,11 @@ textarea {
 	width: 100%;
 }
 
-label{
-	text-transform: uppercase;
-	span{
-
+.search-form{
+	fieldset{
+	border: white;
+	.search-field{
+		font: 1rem $mwl;
+	}
 	}
 }

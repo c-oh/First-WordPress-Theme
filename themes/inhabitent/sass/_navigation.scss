@@ -23,25 +23,29 @@ a {
 .main-navigation {
 	clear: both;
 	display: flex;
-	background-color: transparent;
-	margin-left: 65px;
-	width: 1120px;
+
+    border-bottom: 1px solid #e1e1e1;
+	width: 100%;
 	position: fixed;
 	justify-content: space-between;
 	img {
 		height: 26px;
+		margin-left: 122px;
 	}
 	.nav-menu-mini{
 		width: 33%;
 	
-	.menu-nav-container li {
+	.menu li {
 		text-transform: uppercase;
 		font: 1rem $n;
 		line-height: 28px;
 		padding-left: 1.5rem;
+		a{
+color: $color_everywhere;
+		}
 	}
 	.icon-search {
-		color: white;
+		color: $color_everywhere;
 		font-size: 1rem;
 		padding: 0px;
 	}
@@ -107,10 +111,7 @@ a {
 
 /* Small menu. */
 
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
+
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
