@@ -166,23 +166,20 @@
 				line-height: 3em;
 			}
 		}
-
-			.boxes {
-				width: 100%;
-				    display: flex;
-
-	justify-content: space-between;
-				.product-post {
-					border: 1px solid #e1e1e1;
-					    width: 23%;
-					.product-thumbnail{
-						height: 179px;
-					}
-					.product-title{
-						font: 1rem $mwl;
-						line-height: 28px;
-					}
+		.boxes {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.product-post {
+				border: 1px solid #e1e1e1;
+				width: 23%;
+				.product-thumbnail {
+					height: 179px;
+				}
+				.product-title {
+					font: 1rem $mwl;
+					line-height: 28px;
 				}
 			}
 		}
-	
+	}
