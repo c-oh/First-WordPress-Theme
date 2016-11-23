@@ -468,7 +468,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: transparent;
-  margin-left: 20px;
+  margin-left: 65px;
   width: 1120px;
   position: fixed;
   -ms-flex-pack: justify;
@@ -1095,29 +1095,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-footer {
+.site-footer {
   background: url(../../images/dark-wood@2x.png);
   color: #fff;
   height: 360px;
   margin-top: 30px; }
-  footer .footer-box {
+  .site-footer .footer-box {
     display: -ms-flexbox;
     display: flex;
     height: 278px;
     padding: 4%;
     margin-left: 5%; }
-    footer .footer-box .footer-item {
+    .site-footer .footer-box .footer-item {
       width: 25%; }
-      footer .footer-box .footer-item h2 {
+      .site-footer .footer-box .footer-item h2 {
         font: 1.188rem "novecento", sans-serif;
         color: #d99054; }
-      footer .footer-box .footer-item p {
+      .site-footer .footer-box .footer-item p {
         font: 1rem "merriweatherlight", serif; }
-        footer .footer-box .footer-item p a {
+        .site-footer .footer-box .footer-item p a {
           display: inline-block; }
-      footer .footer-box .footer-item span {
+      .site-footer .footer-box .footer-item span {
         font: 1rem "merriweatherbold", serif; }
-      footer .footer-box .footer-item .logo {
+      .site-footer .footer-box .footer-item .logo {
         text-align: right; }
 
 .contact a {

@@ -32,7 +32,6 @@
 				</nav><!-- #site-navigation -->
 					</header><!-- #masthead -->
 
-				<div class= "herobanner">
 			
 		
 			<div id="content" class="site-content">

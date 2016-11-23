@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area content-area-journal-posts">
+	<div id="primary" class=" content-area-journal-posts">
 		<main id="main" class="site-mains" role="main">
 
 			<section class="error-404 not-found">
