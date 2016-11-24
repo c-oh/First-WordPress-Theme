@@ -1141,12 +1141,18 @@ h6 {
 .search-results .page-title {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font: 2rem "novecento-bold", sans-serif; }
+  font: 2rem "novecento-bold", sans-serif;
+  border-bottom: 1px solid #e1e1e1; }
 
 .search-results .status-publish .entry-title {
   background: none;
-  color: #248a83;
   top: -95px; }
+  .search-results .status-publish .entry-title a {
+    color: #248a83; }
+
+.search-results .status-publish .entry-summary {
+  margin-bottom: 30px;
+  overflow: hidden; }
 
 .search-no-results .site-content, .search-results .site-content {
   display: -ms-flexbox;

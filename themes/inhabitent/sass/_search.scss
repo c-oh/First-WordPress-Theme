@@ -3,14 +3,22 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     font: 2rem $nb; 
+  border-bottom: 1px solid #e1e1e1;
     }
     .status-publish{
         .entry-title{
               background: none;
-    color: #248a83;
     top: -95px;
-        }
+    a{
+            color: #248a83;
     }
+        }
+        .entry-summary{
+        margin-bottom: 30px;
+        overflow:hidden;
+    }
+    }
+    
 }
 
 .search-no-results, .search-results{
