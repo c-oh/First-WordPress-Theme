@@ -909,9 +909,33 @@ h6 {
     margin-bottom: 3rem;
     padding-bottom: 1rem;
     font: 2.4rem "novecento-bold", sans-serif; }
-  .archive .site-main .entry-title {
-    color: white;
-    background: #248A83; }
+  .archive .site-main .entry-header {
+    position: relative; }
+    .archive .site-main .entry-header .entry-title {
+      color: white;
+      background: #248A83;
+      position: absolute;
+      top: 0;
+      margin-top: 48px;
+      max-width: 80%;
+      top: 0;
+      font-size: 2.063rem;
+      line-height: 2.625rem;
+      letter-spacing: 0.125rem;
+      padding: 1rem; }
+    .archive .site-main .entry-header .entry-meta {
+      margin-right: 77px;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 7px;
+      margin-bottom: 7px;
+      background-color: #248A83;
+      color: #f1f1f1; }
+  .archive .site-main .entry-content {
+    width: 89%; }
 
 .about-hero {
   overflow: hidden;
@@ -1046,7 +1070,7 @@ h6 {
   width: 70%;
   padding: 10% 4% 0% 0%;
   border-right: 1px solid lightgrey;
-  margin-left: 107px; }
+  margin-left: 63px; }
 
 .social-media-button {
   display: -ms-flexbox;

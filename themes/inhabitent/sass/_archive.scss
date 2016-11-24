@@ -1,18 +1,44 @@
 .archive {
-  .site-main{
-      border-right: 1px solid #d3d3d3;
-	  margin-left:122px;
-	  margin-top: 68px;
-	  .page-title{
-		  border-bottom: 1px solid #e1e1e1;
-    margin-bottom: 3rem;
-    padding-bottom: 1rem;
-	font: 2.4rem $nb;
-	  }
-.entry-title{
-	color: white;
-	background: $color_everywhere
-	top: 0;
+	.site-main {
+		border-right: 1px solid #d3d3d3;
+		margin-left: 122px;
+		margin-top: 68px;
+		.page-title {
+			border-bottom: 1px solid #e1e1e1;
+			margin-bottom: 3rem;
+			padding-bottom: 1rem;
+			font: 2.4rem $nb;
+		}
+		.entry-header {
+			position: relative;
+			.entry-title {
+				color: white;
+				background: $color_everywhere;
+				position: absolute;
+				top: 0;
+				margin-top: 48px;
+				max-width: 80%;
+				top: 0;
+				font-size: 2.063rem;
+				line-height: 2.625rem;
+				letter-spacing: 0.125rem;
+				padding: 1rem;
+			}
+			.entry-meta {
+			margin-right: 77px;
+			font-size: 0.875rem;
+			text-transform: uppercase;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			padding: 7px;
+			margin-bottom: 7px;
+			background-color: $color_everywhere;
+			color: $color__background-screen;
+		}
+		}
+		.entry-content{
+			width: 89%;
+		}
+	}
 }
-}
-
