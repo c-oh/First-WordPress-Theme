@@ -29,3 +29,29 @@
         width: 100%;
     }
 }
+
+.search-pagination{
+    display: flex;
+    text-transform: uppercase;
+    a{
+        color: white;
+        background: $color_everywhere;
+        border: black;
+       line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    text-align: center;
+        
+        &:hover{
+            background: gray;
+        }
+    }
+    span{
+        background: $color__border-abbr;
+        border: black;
+       line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    text-align: center;
+    }
+}

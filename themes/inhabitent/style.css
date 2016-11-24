@@ -464,7 +464,7 @@ table {
 .comment-form-author {
   float: left; }
   .comment-form-author input {
-    width: 359px; }
+    width: 322px; }
 
 .comment-form-email {
   float: right; }
@@ -900,6 +900,23 @@ h6 {
       line-height: 1.750rem;
       margin-bottom: 0; }
 
+.customize-support .site-content {
+  border-right: 1px solid #d3d3d3; }
+  .customize-support .site-content .entry-title {
+    font-size: 2.063rem;
+    line-height: 2.625rem;
+    letter-spacing: 0.125rem;
+    padding: 1rem;
+    position: absolute;
+    margin-top: 48px;
+    max-width: 80%;
+    top: 0;
+    background-color: #248A83;
+    color: #f1f1f1; }
+  .customize-support .site-content a {
+    color: #f1f1f1;
+    text-decoration: none; }
+
 .about-hero {
   overflow: hidden;
   height: 100vh;
@@ -1033,7 +1050,7 @@ h6 {
   width: 70%;
   padding: 10% 4% 0% 0%;
   border-right: 1px solid lightgrey;
-  margin-left: 74px; }
+  margin-left: 63px; }
 
 .social-media-button {
   display: -ms-flexbox;
@@ -1087,7 +1104,6 @@ h6 {
   width: 1120px; }
   .content-area-journal-posts .entry-header {
     position: relative; }
-    .content-area-journal-posts .entry-header h2,
     .content-area-journal-posts .entry-header .entry-title {
       font-size: 2.063rem;
       line-height: 2.625rem;
@@ -1204,6 +1220,28 @@ h6 {
 
 .search-no-results .site-mains, .search-results .site-mains {
   width: 100%; }
+
+.search-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase; }
+  .search-pagination a {
+    color: white;
+    background: #248A83;
+    border: black;
+    line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    text-align: center; }
+    .search-pagination a:hover {
+      background: gray; }
+  .search-pagination span {
+    background: #666;
+    border: black;
+    line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1336,6 +1374,9 @@ object {
 .post-78 .entry-content h2 {
   font: 2.063rem "novecento-bold", sans-serif;
   color: #2f1339; }
+
+.post-78 .site-content .site-mains {
+  margin-left: 74px; }
 
 .wpcf7 h2 {
   font: 2.063rem "novecento-bold", sans-serif;
