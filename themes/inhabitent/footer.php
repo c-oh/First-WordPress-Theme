@@ -41,7 +41,6 @@
             <p> Copyright &copy 2016 Inhabitent</p>
     </footer>
     <!-- #colophon -->
-    </div>
     <!-- #page -->
     <?php wp_footer(); ?>
     </body>
