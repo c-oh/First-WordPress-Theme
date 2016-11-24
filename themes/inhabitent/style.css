@@ -876,15 +876,14 @@ h6 {
       margin-top: 15px; }
       .adventures .adventure-section-2 .sky .sky-text {
         padding: 14px; }
-
-.read-more-btn {
-  color: white;
-  border: 1px solid white;
-  font: 0.875rem "novecento", sans-serif;
-  padding: 10px 20px;
-  width: 35%; }
-  .read-more-btn:hover {
-    background: #248a83; }
+  .adventures .read-more-btn {
+    color: white;
+    border: 1px solid white;
+    font: 0.875rem "novecento", sans-serif;
+    padding: 10px 20px;
+    width: 35%; }
+    .adventures .read-more-btn:hover {
+      background: #248a83; }
 
 .site-mainsproduct {
   padding-top: 3rem;
@@ -1036,7 +1035,11 @@ h6 {
     border: 1px solid black;
     font: 0.875rem "novecento", sans-serif;
     padding: 10px 20px;
-    width: 35%; }
+    width: 21%; }
+    .page-content a:hover,
+    .entry-content a:hover,
+    .entry-summary a:hover {
+      background: #248a83; }
 
 .site-content .site-mains {
   width: 70%;
