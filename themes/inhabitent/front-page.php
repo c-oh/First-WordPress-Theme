@@ -6,9 +6,8 @@
  */
 get_header(); ?>
     <section class="banner-image">
-        <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="banner-img" alt="inhabitent circle logo"
-        />
-    </div>
+        <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="banner-img" alt="inhabitent circle logo">
+    </section>
     <section class="taxonomy-loop">
         <h6> shop stuff </h6>
         <?php 
@@ -19,7 +18,7 @@ get_header(); ?>
 			foreach ( $taxonomies  as $term ):?>
         <div class="taxonomy-loop-wrapper">
             <?php $url = get_term_link($term->slug, 'product_type') ?>
-            <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
+            <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg" alt= "product-type-icons">
             <p>
                 <?php echo $term->description ?> </p>
             <a href="<?php echo $url ?>" class='btn'>

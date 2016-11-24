@@ -34,9 +34,9 @@
 							<?php get_search_form(); ?>
 						</div>
 					</div>
-		</div>
 		</nav>
 		<!-- #site-navigation -->
 		</header>
+		</div>
 		<!-- #masthead -->
 		<div id="content" class="site-content">
