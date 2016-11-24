@@ -15,16 +15,16 @@
 	}
 }
 
+
 /* Comments */
-	
-	
-	.comment-content a {
-		word-wrap: break-word;
-	}
-	
-	.bypostauthor {
-		display: block;
-	}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
 
 .comments-area {
 	margin-left: 5%;
@@ -32,54 +32,54 @@
 		font: 2.1rem $nb;
 		color: $title_color;
 	}
-	.comment-list li{
-		overflow:hidden;
-		    border-bottom: 1px solid #e1e1e1;
+	.comment-list {
+		margin: 0;
+		padding: 0;
+		li {
+			overflow: hidden;
+			border-bottom: 1px solid #e1e1e1;
 			width: 100%;
-		.comment-body {
-			padding-bottom: 1.5rem;
-			display:flex;
-			.comment-author-avatar {
-				img {
-					border-radius: 30px;
+			.comment-body {
+				padding-bottom: 1.5rem;
+				display: flex;
+				.comment-author-avatar {
+					img {
+						border-radius: 30px;
+					}
 				}
-			}
-
-			.comment-content {				
-				.fn {
-					font: 1rem $mwb;
+				.comment-content {
+					.fn {
+						font: 1rem $mwb;
+					}
+					margin-left: 23px;
+					.comment-metadata {
+						display: flex;
+						font: 1rem $mwl;
+						color: grey;
+						a {
+							color: $color_everywhere;
+						}
+					}
 				}
-				margin-left: 23px;
-				.comment-metadata {
-					display:flex;
+				p {
 					font: 1rem $mwl;
-					color: grey;
-					a{
+				}
+				.reply {
+					a {
 						color: $color_everywhere;
+						font: 1rem $mwl;
 					}
 				}
 			}
-			p {
-				font: 1rem $mwl;
-			}
-			.reply{
-				a{
-					color: $color_everywhere;
-					font: 1rem $mwl;
-				}
-			}
 		}
 	}
-	.comment-respond{
-		.comment-reply-title{
+	.comment-respond {
+		.comment-reply-title {
 			font: 1.75rem $nb;
 			line-height: 36px;
-			margin-top: 1.5rem; 
-		}
-
+			margin-top: 1.5rem;
 		}
 	}
-	
 	.comment-form {
 		p {
 			font: 1rem $mwl;
@@ -93,21 +93,37 @@
 			font: 1rem $n;
 			color: $title_color;
 			margin-bottom: .5rem;
+			display:block;
 		}
 		span {
 			font: 1rem $n;
 			color: $color_footer;
 		}
-		#author input {
-			width: 100%;
-		}
-		.logged-in-as{
-			a{
+		.logged-in-as {
+			a {
 				color: black;
 			}
 		}
 	}
-
+	}
+	.comment-form-author{
+		float: left;
+		input{
+			width: 343px;
+		}
+	}
+.comment-form-email{
+	float: right;
+	input{
+		width: 343px;
+	}
+}
+	.comment-form-url {
+		clear: left;
+	input {
+		width: 100%;
+	}
+	}
 
 
 /* Fields */
@@ -140,26 +156,26 @@ textarea {
 	width: 100%;
 }
 
-.search-form{
+.search-form {
 	fieldset {
-			border:white;
-	a{
-		text-decoration:none;
-		color:transparent;
-		border:none;
-		padding: none;
-	.search-field{
-		font: 1rem $mwl;
+		border: white;
+		a {
+			text-decoration: none;
+			color: transparent;
+			border: none;
+			padding: none;
+			.search-field {
+				font: 1rem $mwl;
+			}
+		}
 	}
-	}
-}
 }
 
-.no-results{
-	.page-header{
+.no-results {
+	.page-header {
 		border-bottom: 1px solid #e1e1e1;
 	}
-	.page-content{
-		color:white;
+	.page-content {
+		color: white;
 	}
 }
