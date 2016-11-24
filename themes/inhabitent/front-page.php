@@ -26,7 +26,6 @@ get_header(); ?>
                 <?php echo $term->name ?> Stuff </a>
         </div>
         <?php endforeach ?>
-        </div>
         </section>
         <!-- BLOG -->
         <section class="journal">
@@ -43,7 +42,7 @@ get_header(); ?>
                             <?php comments_number();?>
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class='title'>
                                 <?php the_title();?> </a>
-                            <a href="<?php the_permalink(); ?>" class='read-entry-btn' /> Read More</a>
+                            <a href="<?php the_permalink(); ?>" class='read-entry-btn'> Read More</a>
                         </div>
                     </div>
                     <?php endforeach; wp_reset_postdata(); ?>
@@ -59,7 +58,7 @@ get_header(); ?>
                             <a href="#">Getting Back to Nature in a Canoe </a>
                         </h5>
                     
-                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn'> Read More</a>
               
                     </div>
                 </div>
@@ -69,23 +68,22 @@ get_header(); ?>
                     <div class="beach-text">
                         <a href="#">A Night with Friends at the Beach</a>
                     </div>
-                    <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+                    <a href="<?php the_permalink(); ?>" class='read-more-btn'> Read More</a>
                 </div>
                 <div class="view">
                     <div class="view-text">
                         <a href="#">Taking in the View <br> at Big Mountain</a>
-                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn'> Read More</a>
                     </div>
                 </div>
                 <div class="sky">
                     <div class="sky-text">
                         <a href="#">Star - Gazing at the Night Sky</a>
-                        <a href="<?php the_permalink(); ?>" class='read-more-btn' /> Read More</a>
+                        <a href="<?php the_permalink(); ?>" class='read-more-btn'> Read More</a>
                     </div>
                 </div>
             </div>
-            </div>
-            <a href="<?php the_permalink(); ?>" class='read-more-adven' /> more adventures</a>
+            <a href="<?php the_permalink(); ?>" class='read-more-adven'> more adventures</a>
         </section>
         <!-- #secondary -->
         </body>

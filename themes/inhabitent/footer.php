@@ -6,7 +6,7 @@
  */
 
 ?>
-    </div>
+
     <!-- #content -->
     <footer id="colophon" class="site-footer" role="contentinfo">
         <!-- .site-info -->
@@ -15,9 +15,9 @@
                 <div class="contact">
                     <h2> Contact Information </h2>
                     <p> <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto: papiniu@outlook.com"> info@inhabitent.com</a> </p>
+                        <a href="papiniu@outlook.com"> info@inhabitent.com</a> </p>
                     <p> <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a href="tel: 7788625122"> 778-456-7891 </a> </p>
+                        <a href="7788625122"> 778-456-7891 </a> </p>
                     <p> <span> <i class="fa fa-facebook-square" aria-hidden="true"></i>
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 <i class="fa fa-google-plus-square" aria-hidden="true"></i> </span> </p>
@@ -33,12 +33,13 @@
             </div>
             <div class="footer-item">
                 <div class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt= "logo">
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p> Copyright &copy 2016 Inhabitent</p>
+            <p> Copyright &amp; 2016 Inhabitent</p>
+            </div>
     </footer>
     <!-- #colophon -->
     <!-- #page -->
