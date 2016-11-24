@@ -1215,7 +1215,7 @@ h6 {
 .single-post .site-mains {
   width: 100%; }
 
-.tax-product .page-header, .post-type-archive .page-header {
+.tax-product_type .page-header, .post-type-archive .page-header {
   border-bottom: 1px dashed #666;
   margin-bottom: 3rem;
   text-align: center;
