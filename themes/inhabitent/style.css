@@ -743,7 +743,8 @@ h6 {
   text-align: center;
   margin-top: 42px;
   margin-bottom: 43px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #2f1339; }
 
 /* BLOG SECTION */
 .journal {
@@ -793,6 +794,8 @@ h6 {
         font: 0.7rem "novecento", sans-serif;
         padding: 10px 20px;
         width: 35%; }
+        .journal-container .post-list-info .info-area .read-entry-btn:hover {
+          background: #248a83; }
 
 /* ADVENTURE SECTION*/
 .adventures {
