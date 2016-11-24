@@ -7,15 +7,16 @@
 
 a {
 	color: white;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+}
 
+&:focus {
+	outline: thin dotted;
+}
+
+&:hover,
+&:active {
+	outline: 0;
+}
 
 
 /* Menus */
@@ -23,8 +24,7 @@ a {
 .main-navigation {
 	clear: both;
 	display: flex;
-background: hsla(0,0%,100%,.8);
-    
+	background: hsla(0, 0%, 100%, .8);
 	width: 100%;
 	position: fixed;
 	justify-content: space-between;
@@ -32,14 +32,13 @@ background: hsla(0,0%,100%,.8);
 		height: 26px;
 		margin-left: 122px;
 	}
-	
 	.menu li {
 		text-transform: uppercase;
 		font: 1rem $n;
 		line-height: 28px;
 		padding-left: 1.5rem;
-		a{
-color: $color_everywhere;
+		a {
+			color: $color_everywhere;
 		}
 	}
 	.icon-search {
@@ -47,14 +46,16 @@ color: $color_everywhere;
 		font-size: 1rem;
 		padding: 0px;
 	}
-	fieldset{
+	fieldset {
 		border: none;
-		padding:0px;
-			padding-left: 1.5rem;
+		padding: 0px;
+		padding-left: 1.5rem;
+		.flexit {
+			display: flex;
+		}
 		input[type="search"] {
 			width: 0px;
 			padding: 0;
-			
 			&:focus {
 				outline: none;
 			}
@@ -108,8 +109,6 @@ a {
 
 /* Small menu. */
 
-
-
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
@@ -141,8 +140,7 @@ a {
 	color: white;
 }
 
-
-.site-header{
+.site-header {
 	top: 0;
 	width: 100%;
 	border-bottom: 1px solid lightgrey;
@@ -151,56 +149,50 @@ a {
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
-.main-navigation{
+.main-navigation {
 	padding: 1.55em 0;
-    margin: 0 auto;
+	margin: 0 auto;
 	height: 30px;
 	display: flex;
-    align-items: center;
-
-    a {
-        margin-bottom: 0.5rem;
-    }
-    img {
-        margin-top: 1.5rem;
-    }
-
+	align-items: center;
+	a {
+		margin-bottom: 0.5rem;
+	}
+	img {
+		margin-top: 1.5rem;
+	}
 }
+
 .nav-menu-mini {
-    display: flex;
-    align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 }
 
-
-.logged-in .site-header{
+.logged-in .site-header {
 	top: 32px;
 }
 
 .header-search fieldset {
+	border: none;
+	margin-top: 7px;
+	.icon-search {
+		display: inline;
+	}
+	button {
+		visibility: hidden;
+	}
+	.fa {
+		font-size: 1rem;
+		color: $color_everywhere;
+	}
+	input[type="search"] {
 		border: none;
-		margin-top: 7px;
-		
-		.icon-search {
-			display: inline;
+		width: 0px;
+		padding: 0;
+		text-transform: uppercase;
+		font-size: 1rem;
+		&:focus {
+			outline: none;
 		}
-
-		button {
-			visibility: hidden;
-		}
-		.fa {
-			font-size: 1rem;
-			color: $color_everywhere;
-		}
-
-		input[type="search"] {
-			border:none;
-			width: 0px;
-			padding: 0;
-			text-transform: uppercase;
-			font-size: 1rem;
-			
-			&:focus {
-				outline: none;
-			}
-		}
+	}
 }

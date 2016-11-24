@@ -146,16 +146,7 @@
 	.archive .format-aside .entry-title {
 		display: none;
 	}
-	/* Comments */
-	
-	
-	.comment-content a {
-		word-wrap: break-word;
-	}
-	
-	.bypostauthor {
-		display: block;
-	}
+
 	/*taxonomy-product*/
 	
 	.content-area {
@@ -206,4 +197,13 @@
     	flex-wrap: wrap;
 		justify-content: space-around;
 	}
+	}
+
+	.single-post{
+.site-content{
+	display:flex;
+}
+.site-mains{
+	width: 100%;
+}
 	}

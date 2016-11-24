@@ -15,28 +15,43 @@
 	}
 }
 
+/* Comments */
+	
+	
+	.comment-content a {
+		word-wrap: break-word;
+	}
+	
+	.bypostauthor {
+		display: block;
+	}
+
 .comments-area {
-	width: 60%;
 	margin-left: 5%;
 	.comments-title {
 		font: 2.1rem $nb;
 		color: $title_color;
 	}
-	.comment-list {
+	.comment-list li{
+		overflow:hidden;
+		    border-bottom: 1px solid #e1e1e1;
+			width: 100%;
 		.comment-body {
+			padding-bottom: 1.5rem;
 			display:flex;
 			.comment-author-avatar {
 				img {
 					border-radius: 30px;
 				}
 			}
-			.comment-body{
+
 			.comment-content {				
 				.fn {
 					font: 1rem $mwb;
 				}
 				margin-left: 10px;
 				.comment-metadata {
+					display:flex;
 					font: 1rem $mwl;
 					color: grey;
 					a{
@@ -55,7 +70,16 @@
 			}
 		}
 	}
+	.comment-respond{
+		.comment-reply-title{
+			font: 1.75rem $nb;
+			line-height: 36px;
+			margin-top: 1.5rem; 
+		}
+
+		}
 	}
+	
 	.comment-form {
 		p {
 			font: 1rem $mwl;
@@ -83,7 +107,7 @@
 			}
 		}
 	}
-}
+
 
 
 /* Fields */
