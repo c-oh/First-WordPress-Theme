@@ -900,21 +900,18 @@ h6 {
       line-height: 1.750rem;
       margin-bottom: 0; }
 
-.archive .site-main {
+.date .site-main {
   border-right: 1px solid #d3d3d3;
   margin-left: 47px;
   margin-top: 68px; }
-  .archive .site-main .page-header {
-    border-bottom: none;
-    text-align: none; }
-  .archive .site-main .page-title {
+  .date .site-main .page-title {
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 3rem;
     padding-bottom: 1rem;
     font: 2.4rem "novecento-bold", sans-serif; }
-  .archive .site-main .entry-header {
+  .date .site-main .entry-header {
     position: relative; }
-    .archive .site-main .entry-header .entry-title {
+    .date .site-main .entry-header .entry-title {
       color: white;
       background: #248A83;
       position: absolute;
@@ -926,7 +923,7 @@ h6 {
       line-height: 2.625rem;
       letter-spacing: 0.125rem;
       padding: 1rem; }
-    .archive .site-main .entry-header .entry-meta {
+    .date .site-main .entry-header .entry-meta {
       margin-right: 61px;
       font-size: 0.875rem;
       text-transform: uppercase;
@@ -937,7 +934,7 @@ h6 {
       margin-bottom: 7px;
       background-color: #248A83;
       color: #f1f1f1; }
-  .archive .site-main .entry-content {
+  .date .site-main .entry-content {
     width: 89%; }
 
 .about-hero {
@@ -1168,51 +1165,48 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
-  .content-area .page-header {
-    border-bottom: 1px dashed #666;
-    margin-bottom: 3rem;
-    text-align: center;
-    font: 1rem "merriweatherlight", serif;
-    line-height: 1.75em; }
-    .content-area .page-header .page-title {
-      font: 2rem "novecento-bold", sans-serif;
-      line-height: 3em; }
-  .content-area .boxes {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .content-area .product-post {
-    border: 1px solid #e1e1e1;
-    width: 23%;
-    margin-bottom: 1.5rem; }
-    .content-area .product-post .product-thumbnail {
-      background: #e1e1e1; }
-      .content-area .product-post .product-thumbnail img {
-        height: 250px;
-        width: auto;
-        background-size: cover; }
-    .content-area .product-post .product-info {
-      padding: .75rem 1rem; }
-      .content-area .product-post .product-info .entry-title {
-        font: 1rem "merriweatherlight", serif; }
-      .content-area .product-post .product-info h3::before {
-        margin: 0;
-        float: left;
-        width: 0;
-        white-space: nowrap;
-        content: "............................................"; }
-      .content-area .product-post .product-info span {
-        float: right;
-        font: 0.9rem "merriweatherlight", serif; }
-  .content-area .boxes-archive {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+  .content-area .page-title {
+    font: 2rem "novecento-bold", sans-serif;
+    line-height: 3em; }
+
+.boxes {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.product-post {
+  border: 1px solid #e1e1e1;
+  width: 23%;
+  margin-bottom: 1.5rem; }
+  .product-post .product-thumbnail {
+    background: #e1e1e1; }
+    .product-post .product-thumbnail img {
+      height: 250px;
+      width: auto;
+      background-size: cover; }
+  .product-post .product-info {
+    padding: .75rem 1rem; }
+    .product-post .product-info .entry-title {
+      font: 1rem "merriweatherlight", serif; }
+    .product-post .product-info h3::before {
+      margin: 0;
+      float: left;
+      width: 0;
+      white-space: nowrap;
+      content: "............................................"; }
+    .product-post .product-info span {
+      float: right;
+      font: 0.9rem "merriweatherlight", serif; }
+
+.boxes-archive {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .single-post .site-content {
   display: -ms-flexbox;
@@ -1220,6 +1214,13 @@ h6 {
 
 .single-post .site-mains {
   width: 100%; }
+
+.tax-product .page-header, .post-type-archive .page-header {
+  border-bottom: 1px dashed #666;
+  margin-bottom: 3rem;
+  text-align: center;
+  font: 1rem "merriweatherlight", serif;
+  line-height: 1.75em; }
 
 .search-results .content-area-journal-posts {
   margin-left: none; }

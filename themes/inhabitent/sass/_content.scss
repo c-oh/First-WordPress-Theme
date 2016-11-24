@@ -163,12 +163,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 1120px;
-		.page-header {
-			border-bottom: 1px dashed $color__border-abbr;
-			margin-bottom: 3rem;
-			text-align: center;
-			font: 1rem $mwl;
-			line-height: 1.75em;
 			.page-title {
 				font: 2rem $nb;
 				line-height: 3em;
@@ -216,7 +210,7 @@
 			flex-wrap: wrap;
 			justify-content: space-around;
 		}
-	}
+
 	
 	.single-post {
 		.site-content {
@@ -226,3 +220,13 @@
 			width: 100%;
 		}
 	}
+
+.tax-product, .post-type-archive{
+	.page-header {
+			border-bottom: 1px dashed $color__border-abbr;
+			margin-bottom: 3rem;
+			text-align: center;
+			font: 1rem $mwl;
+			line-height: 1.75em;
+}
+}
