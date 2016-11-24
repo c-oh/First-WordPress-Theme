@@ -189,15 +189,24 @@
 			}
 			.product-info {
 				padding: .75rem 1rem;
-				.product-title {
+				.entry-title{
 					font: 1rem $mwl;
-					line-height: 28px;
-					::before {
-						content: "..................................";
 					}
+
+					h3::before {
+						margin: 0;
+                    float: left;
+                    width: 0;
+                    white-space: nowrap;
+                    content: "............................................";
+                }
+				span{
+					float:right;
+					font: 0.9rem $mwl;
+				}
 				}
 			}
-		}
+	
 		.boxes-archive {
 			display: flex;
 			flex-wrap: wrap;

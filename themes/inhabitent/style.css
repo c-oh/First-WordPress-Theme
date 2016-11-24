@@ -1156,11 +1156,17 @@ h6 {
         background-size: cover; }
     .content-area .product-post .product-info {
       padding: .75rem 1rem; }
-      .content-area .product-post .product-info .product-title {
-        font: 1rem "merriweatherlight", serif;
-        line-height: 28px; }
-        .content-area .product-post .product-info .product-title ::before {
-          content: ".................................."; }
+      .content-area .product-post .product-info .entry-title {
+        font: 1rem "merriweatherlight", serif; }
+      .content-area .product-post .product-info h3::before {
+        margin: 0;
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: "............................................"; }
+      .content-area .product-post .product-info span {
+        float: right;
+        font: 0.9rem "merriweatherlight", serif; }
   .content-area .boxes-archive {
     display: -ms-flexbox;
     display: flex;
