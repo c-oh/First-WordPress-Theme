@@ -644,24 +644,12 @@ a {
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.6); }
 
-.main-navigation {
-  padding: 1.55em 0;
-  margin: 0 auto;
-  height: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
-  .main-navigation a {
-    margin-bottom: 0.5rem; }
-  .main-navigation img {
-    margin-top: 1.5rem; }
-
 .nav-menu-mini {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: end;
-      align-items: flex-end; }
+      align-items: flex-end;
+  margin-right: 91px; }
 
 .logged-in .site-header {
   top: 32px; }
@@ -1336,7 +1324,8 @@ object {
 
 .post-78 .entry-header {
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #2f1339; }
 
 .post-78 .entry-content h2 {
   font: 2.063rem "novecento-bold", sans-serif;
