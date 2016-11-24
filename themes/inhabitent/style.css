@@ -902,8 +902,11 @@ h6 {
 
 .archive .site-main {
   border-right: 1px solid #d3d3d3;
-  margin-left: 122px;
+  margin-left: 47px;
   margin-top: 68px; }
+  .archive .site-main .page-header {
+    border-bottom: none;
+    text-align: none; }
   .archive .site-main .page-title {
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 3rem;
@@ -924,7 +927,7 @@ h6 {
       letter-spacing: 0.125rem;
       padding: 1rem; }
     .archive .site-main .entry-header .entry-meta {
-      margin-right: 77px;
+      margin-right: 61px;
       font-size: 0.875rem;
       text-transform: uppercase;
       position: absolute;
@@ -1070,7 +1073,7 @@ h6 {
   width: 70%;
   padding: 10% 4% 0% 0%;
   border-right: 1px solid lightgrey;
-  margin-left: 63px; }
+  margin-left: 107px; }
 
 .social-media-button {
   display: -ms-flexbox;
@@ -1161,49 +1164,49 @@ h6 {
   display: none; }
 
 /*taxonomy-product*/
-.tax-product .content-area, .post-type-archive .content-area {
+.content-area {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
-  .tax-product .content-area .page-header, .post-type-archive .content-area .page-header {
+  .content-area .page-header {
     border-bottom: 1px dashed #666;
     margin-bottom: 3rem;
     text-align: center;
     font: 1rem "merriweatherlight", serif;
     line-height: 1.75em; }
-    .tax-product .content-area .page-header .page-title, .post-type-archive .content-area .page-header .page-title {
+    .content-area .page-header .page-title {
       font: 2rem "novecento-bold", sans-serif;
       line-height: 3em; }
-  .tax-product .content-area .boxes, .post-type-archive .content-area .boxes {
+  .content-area .boxes {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .tax-product .content-area .product-post, .post-type-archive .content-area .product-post {
+  .content-area .product-post {
     border: 1px solid #e1e1e1;
     width: 23%;
     margin-bottom: 1.5rem; }
-    .tax-product .content-area .product-post .product-thumbnail, .post-type-archive .content-area .product-post .product-thumbnail {
+    .content-area .product-post .product-thumbnail {
       background: #e1e1e1; }
-      .tax-product .content-area .product-post .product-thumbnail img, .post-type-archive .content-area .product-post .product-thumbnail img {
+      .content-area .product-post .product-thumbnail img {
         height: 250px;
         width: auto;
         background-size: cover; }
-    .tax-product .content-area .product-post .product-info, .post-type-archive .content-area .product-post .product-info {
+    .content-area .product-post .product-info {
       padding: .75rem 1rem; }
-      .tax-product .content-area .product-post .product-info .entry-title, .post-type-archive .content-area .product-post .product-info .entry-title {
+      .content-area .product-post .product-info .entry-title {
         font: 1rem "merriweatherlight", serif; }
-      .tax-product .content-area .product-post .product-info h3::before, .post-type-archive .content-area .product-post .product-info h3::before {
+      .content-area .product-post .product-info h3::before {
         margin: 0;
         float: left;
         width: 0;
         white-space: nowrap;
         content: "............................................"; }
-      .tax-product .content-area .product-post .product-info span, .post-type-archive .content-area .product-post .product-info span {
+      .content-area .product-post .product-info span {
         float: right;
         font: 0.9rem "merriweatherlight", serif; }
-  .tax-product .content-area .boxes-archive, .post-type-archive .content-area .boxes-archive {
+  .content-area .boxes-archive {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -1211,11 +1214,11 @@ h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
 
-.tax-product .single-post .site-content, .post-type-archive .single-post .site-content {
+.single-post .site-content {
   display: -ms-flexbox;
   display: flex; }
 
-.tax-product .single-post .site-mains, .post-type-archive .single-post .site-mains {
+.single-post .site-mains {
   width: 100%; }
 
 .search-results .content-area-journal-posts {

@@ -1,8 +1,12 @@
 .archive {
 	.site-main {
 		border-right: 1px solid #d3d3d3;
-		margin-left: 122px;
+		margin-left: 47px;
 		margin-top: 68px;
+		.page-header{
+			border-bottom:none;
+			text-align: none;
+		}
 		.page-title {
 			border-bottom: 1px solid #e1e1e1;
 			margin-bottom: 3rem;
@@ -25,7 +29,7 @@
 				padding: 1rem;
 			}
 			.entry-meta {
-			margin-right: 77px;
+				margin-right: 61px;
 			font-size: 0.875rem;
 			text-transform: uppercase;
 			position: absolute;
