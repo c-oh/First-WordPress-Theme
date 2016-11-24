@@ -1,57 +1,62 @@
-.search-results{
-    .page-title{
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font: 2rem $nb; 
-  border-bottom: 1px solid #e1e1e1;
-    }
-    .status-publish{
-        .entry-title{
-              background: none;
-    top: -95px;
-    a{
-            color: #248a83;
-    }
+.search-results {
+    .content-area-journal-posts {
+        margin-left: none;
+        .page-title {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font: 2rem $nb;
+            border-bottom: 1px solid #e1e1e1;
+            padding-bottom: 25px;
         }
-        .entry-summary{
-        margin-bottom: 30px;
-        overflow:hidden;
+        .entry-header  a {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font: 1.750rem $nb;
+            color: $color_everywhere;
+            &:hover {
+                color: $title_color;
+            }
+        }
     }
-    }
-    
 }
 
-.search-no-results, .search-results{
-    .site-content{
-        display:flex;
+.search-no-results,
+.search-results {
+    .site-content {
+        display: flex;
     }
-    .site-mains{
+    .site-mains {
         width: 100%;
     }
 }
 
-.search-pagination{
+.search-pagination {
     display: flex;
     text-transform: uppercase;
-    a{
+    a {
         color: white;
         background: $color_everywhere;
         border: black;
-       line-height: 1;
-    padding: .5rem .75rem;
-    margin-right: .25rem;
-    text-align: center;
-        
-        &:hover{
-            background: gray;
+        line-height: 1;
+        padding: .5rem .75rem;
+        margin-right: .25rem;
+        text-align: center;
+        &:hover {
+            background: $title_color;
         }
     }
-    span{
+    span {
         background: $color__border-abbr;
         border: black;
-       line-height: 1;
-    padding: .5rem .75rem;
-    margin-right: .25rem;
-    text-align: center;
+        line-height: 1;
+        padding: .5rem .75rem;
+        margin-right: .25rem;
+        text-align: center;
+    }
+}
+
+.show-search {
+    &:hover {
+        background-color: transparent;
     }
 }

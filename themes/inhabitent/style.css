@@ -1050,22 +1050,22 @@ h6 {
   width: 70%;
   padding: 10% 4% 0% 0%;
   border-right: 1px solid lightgrey;
-  margin-left: 63px; }
+  margin-left: 107px; }
 
 .social-media-button {
   display: -ms-flexbox;
   display: flex; }
-  .social-media-button p {
+  .social-media-button .white-link {
     margin-right: 5px; }
-  .social-media-button a {
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    font: 0.875rem "novecento", sans-serif;
-    padding: 10px 20px;
-    width: 102%; }
-    .social-media-button a:hover {
-      background-color: #248A83; }
+    .social-media-button .white-link a {
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      font: 0.875rem "novecento", sans-serif;
+      padding: 10px 20px;
+      width: 102%; }
+      .social-media-button .white-link a:hover {
+        background-color: #248A83; }
 
 #primary {
   display: -ms-flexbox;
@@ -1097,14 +1097,14 @@ h6 {
     display: -ms-flexbox;
     display: flex; }
 
-.content-area-journal-posts {
+.blog .content-area-journal-posts, .single-format-standard .content-area-journal-posts {
   width: 70%;
   margin-left: 102px;
   margin-right: 29px;
   width: 1120px; }
-  .content-area-journal-posts .entry-header {
+  .blog .content-area-journal-posts .entry-header, .single-format-standard .content-area-journal-posts .entry-header {
     position: relative; }
-    .content-area-journal-posts .entry-header .entry-title {
+    .blog .content-area-journal-posts .entry-header .entry-title, .single-format-standard .content-area-journal-posts .entry-header .entry-title {
       font-size: 2.063rem;
       line-height: 2.625rem;
       letter-spacing: 0.125rem;
@@ -1115,13 +1115,13 @@ h6 {
       top: 0;
       background-color: #248A83;
       color: #f1f1f1; }
-    .content-area-journal-posts .entry-header img {
+    .blog .content-area-journal-posts .entry-header img, .single-format-standard .content-area-journal-posts .entry-header img {
       width: 1000px;
       height: auto; }
-    .content-area-journal-posts .entry-header a {
+    .blog .content-area-journal-posts .entry-header a, .single-format-standard .content-area-journal-posts .entry-header a {
       color: #f1f1f1;
       text-decoration: none; }
-  .content-area-journal-posts .entry-meta {
+  .blog .content-area-journal-posts .entry-meta, .single-format-standard .content-area-journal-posts .entry-meta {
     font-size: 0.875rem;
     text-transform: uppercase;
     position: absolute;
@@ -1131,7 +1131,7 @@ h6 {
     margin-bottom: 7px;
     background-color: #248A83;
     color: #f1f1f1; }
-  .content-area-journal-posts .page-links {
+  .blog .content-area-journal-posts .page-links, .single-format-standard .content-area-journal-posts .page-links {
     clear: both;
     margin: 0 0 1.5em; }
 
@@ -1198,27 +1198,29 @@ h6 {
 .single-post .site-mains {
   width: 100%; }
 
-.search-results .page-title {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font: 2rem "novecento-bold", sans-serif;
-  border-bottom: 1px solid #e1e1e1; }
+.search-results .content-area-journal-posts {
+  margin-left: none; }
+  .search-results .content-area-journal-posts .page-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font: 2rem "novecento-bold", sans-serif;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px; }
+  .search-results .content-area-journal-posts .entry-header a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font: 1.75rem "novecento-bold", sans-serif;
+    color: #248A83; }
+    .search-results .content-area-journal-posts .entry-header a:hover {
+      color: #2f1339; }
 
-.search-results .status-publish .entry-title {
-  background: none;
-  top: -95px; }
-  .search-results .status-publish .entry-title a {
-    color: #248a83; }
-
-.search-results .status-publish .entry-summary {
-  margin-bottom: 30px;
-  overflow: hidden; }
-
-.search-no-results .site-content, .search-results .site-content {
+.search-no-results .site-content,
+.search-results .site-content {
   display: -ms-flexbox;
   display: flex; }
 
-.search-no-results .site-mains, .search-results .site-mains {
+.search-no-results .site-mains,
+.search-results .site-mains {
   width: 100%; }
 
 .search-pagination {
@@ -1234,7 +1236,7 @@ h6 {
     margin-right: .25rem;
     text-align: center; }
     .search-pagination a:hover {
-      background: gray; }
+      background: #2f1339; }
   .search-pagination span {
     background: #666;
     border: black;
@@ -1242,6 +1244,9 @@ h6 {
     padding: .5rem .75rem;
     margin-right: .25rem;
     text-align: center; }
+
+.show-search:hover {
+  background-color: transparent; }
 
 /*--------------------------------------------------------------
 # Media

@@ -32,6 +32,6 @@ get_header(); ?>
 				<?php endwhile; // End of the loop. ?>
 		</main>
 		<!-- #main -->
-	</section>>
+	</section>
 	<!-- #primary -->
 	<?php get_footer(); ?>
