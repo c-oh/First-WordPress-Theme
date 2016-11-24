@@ -1,22 +1,18 @@
-.customize-support{
-  .site-content{
+.archive {
+  .site-main{
       border-right: 1px solid #d3d3d3;
-  .entry-title {
+	  margin-left:122px;
+	  margin-top: 68px;
+	  .page-title{
+		  border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+	font: 2.4rem $nb;
+	  }
+.entry-title{
+	color: white;
+	background: $color_everywhere
+	top: 0;
+}
+}
 
-				font-size: 2.063rem;
-				line-height: 2.625rem;
-				letter-spacing: 0.125rem;
-				padding: 1rem;
-				position: absolute;
-				margin-top: 48px;
-				max-width: 80%;
-				top: 0;
-				background-color: $color_everywhere;
-				color: $color__background-screen;
-			}
-            a{
-                color: $color__background-screen;
-				text-decoration: none;
-            }
-}
-}
