@@ -401,70 +401,75 @@ table {
 .bypostauthor {
   display: block; }
 
-.comments-area {
-  margin-left: 5%; }
-  .comments-area .comments-title {
-    font: 2.1rem "novecento-bold", sans-serif;
-    color: #2f1339; }
-  .comments-area .comment-list {
-    margin: 0;
-    padding: 0; }
-    .comments-area .comment-list li {
-      overflow: hidden;
-      border-bottom: 1px solid #e1e1e1;
-      width: 100%; }
-      .comments-area .comment-list li .comment-body {
-        padding-bottom: 1.5rem;
-        display: -ms-flexbox;
-        display: flex; }
-        .comments-area .comment-list li .comment-body .comment-author-avatar img {
-          border-radius: 30px; }
-        .comments-area .comment-list li .comment-body .comment-content {
-          margin-left: 23px; }
-          .comments-area .comment-list li .comment-body .comment-content .fn {
-            font: 1rem "merriweatherbold", serif; }
-          .comments-area .comment-list li .comment-body .comment-content .comment-metadata {
-            display: -ms-flexbox;
-            display: flex;
-            font: 1rem "merriweatherlight", serif;
-            color: grey; }
-            .comments-area .comment-list li .comment-body .comment-content .comment-metadata a {
-              color: #248A83; }
-        .comments-area .comment-list li .comment-body p {
-          font: 1rem "merriweatherlight", serif; }
-        .comments-area .comment-list li .comment-body .reply a {
-          color: #248A83;
-          font: 1rem "merriweatherlight", serif; }
-  .comments-area .comment-respond .comment-reply-title {
-    font: 1.75rem "novecento-bold", sans-serif;
-    line-height: 36px;
-    margin-top: 1.5rem; }
-  .comments-area .comment-form p {
-    font: 1rem "merriweatherlight", serif; }
-  .comments-area .comment-form h3 {
-    margin-top: 1.5rem;
-    font: 1.8rem "novecento", sans-serif;
-    line-height: 1.25; }
-  .comments-area .comment-form label {
-    font: 1rem "novecento", sans-serif;
-    color: #2f1339;
-    margin-bottom: .5rem;
-    display: block; }
-  .comments-area .comment-form span {
-    font: 1rem "novecento", sans-serif;
-    color: #d99054; }
-  .comments-area .comment-form .logged-in-as a {
-    color: black; }
+.comments-area .comments-title {
+  font: 2.1rem "novecento-bold", sans-serif;
+  color: #2f1339; }
+
+.comments-area .comment-list {
+  margin: 0;
+  padding: 0; }
+  .comments-area .comment-list li {
+    overflow: hidden;
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%; }
+    .comments-area .comment-list li .comment-body {
+      padding-bottom: 1.5rem;
+      display: -ms-flexbox;
+      display: flex; }
+      .comments-area .comment-list li .comment-body .comment-author-avatar img {
+        border-radius: 30px; }
+      .comments-area .comment-list li .comment-body .comment-content {
+        margin-left: 23px; }
+        .comments-area .comment-list li .comment-body .comment-content .fn {
+          font: 1rem "merriweatherbold", serif; }
+        .comments-area .comment-list li .comment-body .comment-content .comment-metadata {
+          display: -ms-flexbox;
+          display: flex;
+          font: 1rem "merriweatherlight", serif;
+          color: grey; }
+          .comments-area .comment-list li .comment-body .comment-content .comment-metadata a {
+            color: #248A83; }
+      .comments-area .comment-list li .comment-body p {
+        font: 1rem "merriweatherlight", serif; }
+      .comments-area .comment-list li .comment-body .reply a {
+        color: #248A83;
+        font: 1rem "merriweatherlight", serif; }
+
+.comments-area .comment-respond .comment-reply-title {
+  font: 1.75rem "novecento-bold", sans-serif;
+  line-height: 36px;
+  margin-top: 13.5rem; }
+
+.comments-area .comment-form p {
+  font: 1rem "merriweatherlight", serif; }
+
+.comments-area .comment-form h3 {
+  margin-top: 1.5rem;
+  font: 1.8rem "novecento", sans-serif;
+  line-height: 1.25; }
+
+.comments-area .comment-form label {
+  font: 1rem "novecento", sans-serif;
+  color: #2f1339;
+  margin-bottom: .5rem;
+  display: block; }
+
+.comments-area .comment-form span {
+  font: 1rem "novecento", sans-serif;
+  color: #d99054; }
+
+.comments-area .comment-form .logged-in-as a {
+  color: black; }
 
 .comment-form-author {
   float: left; }
   .comment-form-author input {
-    width: 343px; }
+    width: 359px; }
 
 .comment-form-email {
   float: right; }
   .comment-form-email input {
-    width: 343px; }
+    width: 359px; }
 
 .comment-form-url {
   clear: left; }
@@ -1048,6 +1053,8 @@ h6 {
     font: 0.875rem "novecento", sans-serif;
     padding: 10px 20px;
     width: 102%; }
+    .social-media-button a:hover {
+      background-color: #248A83; }
 
 #primary {
   display: -ms-flexbox;

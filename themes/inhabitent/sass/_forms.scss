@@ -27,7 +27,6 @@
 }
 
 .comments-area {
-	margin-left: 5%;
 	.comments-title {
 		font: 2.1rem $nb;
 		color: $title_color;
@@ -77,7 +76,7 @@
 		.comment-reply-title {
 			font: 1.75rem $nb;
 			line-height: 36px;
-			margin-top: 1.5rem;
+			margin-top: 13.5rem;
 		}
 	}
 	.comment-form {
@@ -109,13 +108,13 @@
 	.comment-form-author{
 		float: left;
 		input{
-			width: 343px;
+			width: 359px;
 		}
 	}
 .comment-form-email{
 	float: right;
 	input{
-		width: 343px;
+		width: 359px;
 	}
 }
 	.comment-form-url {

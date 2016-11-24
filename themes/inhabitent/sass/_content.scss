@@ -55,7 +55,11 @@
 					font: 0.875rem $n;
 					padding: 10px 20px;
 					width: 102%;
+									&:hover {
+        background-color: $color_everywhere
+    }
 				}
+
 			}
 			
 	#primary {
